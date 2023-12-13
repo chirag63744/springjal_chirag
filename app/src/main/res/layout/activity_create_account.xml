@@ -1,0 +1,200 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151F"
+    tools:context=".on_boarding">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/createaccounttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="73dp"
+                android:text="Create an account"
+                android:textColor="#fff"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:id="@+id/namerl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/createaccounttxt">
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:text="Name:"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="#0E0E15"
+                    android:hint="Enter your Name"
+                    android:textColorHint="#5F5F5F"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/emailidrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/namerl">
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="24dp"
+                    android:text="E-Mail ID:"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="#0E0E15"
+                    android:hint="06yuvra2001singh@gmail.com"
+                    android:textColorHint="#5F5F5F"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/phoneNorl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/emailidrl">
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:text="Phone No."
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="#0E0E15"
+                    android:hint="+91 6376179619"
+                    android:textColorHint="#5F5F5F"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/passwordrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/phoneNorl">
+                <TextView
+                    android:layout_width="73dp"
+                    android:layout_height="24dp"
+                    android:text="Password"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="#0E0E15"
+                    android:hint="Minimum 8 Characters"
+                    android:textColorHint="#504E4E"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/confpasswdrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/passwordrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text=" Confirm Password"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="#0E0E15"
+                    android:hint="Minimum 8 Characters"
+                    android:textColorHint="#504E4E"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/patientIdrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/phoneNorl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Patient Id:"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="#0E0E15"
+                    android:hint="Enter Patient id provided by Hospital"
+                    android:textColorHint="#504E4E"
+                    />
+            </RelativeLayout>
+           <RelativeLayout
+               android:id="@+id/createaccountbtn"
+               android:layout_width="201dp"
+               android:layout_height="58dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginLeft="90dp"
+               android:background="@drawable/button">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="40dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Create Account"
+                   android:textColor="#FFF"
+                   android:textSize="16dp"
+                   android:textStyle="bold"
+                   android:textAlignment="center"/>
+           </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

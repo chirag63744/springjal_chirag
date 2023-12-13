@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151F"
+    tools:context=".login">
+    <TextView
+        android:id="@+id/logintxtpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="73dp"/>
+    <RelativeLayout
+        android:id="@+id/loginrl"
+        android:layout_width="343dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@+id/logintxtpage">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Id:"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:layout_width="343dp"
+            android:layout_height="53.15dp"
+            android:layout_marginTop="32.85dp"
+            android:background="#0E0E15"
+            android:hint="yuvra201@gmail.com"
+            android:textColorHint="#5F5F5F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/passwdrllogin"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@+id/loginrl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/passwd"
+            android:layout_width="343dp"
+            android:layout_height="53.15dp"
+            android:layout_marginTop="32.85dp"
+            android:background="#0E0E15"
+            android:hint="Enter your Secret Password"
+            android:textColorHint="#5F5F5F"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password"
+            android:layout_below="@+id/passwd"
+            android:layout_marginTop="22dp"
+            android:textColor="#DB4464"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/loginbtn"
+        android:layout_width="201dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/passwdrllogin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="18dp"
+            android:text="Log In"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

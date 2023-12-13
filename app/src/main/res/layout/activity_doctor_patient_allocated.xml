@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151F"
+    tools:context=".doctor_patient_allocated">
+<TextView
+    android:id="@+id/patientDetailstxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Patient Details"
+    android:textColor="#fff"
+    android:textSize="32dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="343dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/patientDetailstxt"
+        android:background="#252525"
+        android:layout_marginLeft="20dp"
+        android:hint="Search"
+        android:textColorHint="#EBEBF5"
+        android:layout_marginTop="9dp"/>
+    <RelativeLayout
+        android:id="@+id/patientsinfo"
+        android:layout_width="369dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/search">
+
+        <ImageView
+            android:id="@+id/patient1Img"
+            android:layout_width="75dp"
+            android:layout_height="71.56dp"
+            app:srcCompat="@drawable/patient1" />
+        <TextView
+            android:id="@+id/patientName"
+            android:layout_width="194dp"
+            android:layout_height="28dp"
+            android:text="James Bond"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="132dp"/>
+        <TextView
+            android:id="@+id/patientId"
+            android:layout_width="191dp"
+            android:layout_height="19dp"
+            android:text="Patient Id : 20MIS0198"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_marginLeft="132dp"
+            android:layout_below="@+id/patientName"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            app:srcCompat="@drawable/red_arrow"
+            android:layout_marginLeft="319dp"
+            android:layout_marginTop="28dp"/>
+        <TextView
+            android:layout_width="369dp"
+            android:layout_height="1dp"
+            android:text="_________________________________________"
+            android:layout_below="@+id/patient1Img"
+            android:layout_marginTop="10dp"
+            android:textColor="#9A8787"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151F"
+    tools:context=".on_boarding">
+
+    <TextView
+        android:id="@+id/Joshtxt"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="121dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Josh"
+        android:textColor="#fff"
+        android:textSize="32dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="151dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="238dp"
+        android:textSize="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#fff"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into s PageMaker including versions of Lorem Ipsum" />
+
+    <RelativeLayout
+        android:id="@+id/loginButton"
+        android:layout_width="254dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="545dp"
+        android:background="@drawable/button"
+        android:clipToOutline="true">
+
+        <TextView
+            android:id="@+id/loginButtontxt"
+            android:layout_width="103dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Log in"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signUpbtn"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="631dp"
+        android:background="@drawable/button"
+        android:clipToOutline="true">
+
+        <TextView
+            android:id="@+id/signUpbtnTxt"
+            android:layout_width="141dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Create an Account"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>
