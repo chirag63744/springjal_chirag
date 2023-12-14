@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class login extends AppCompatActivity {
-RelativeLayout loginbutton;
+public class DataCollector_new_activity_1 extends AppCompatActivity {
+RelativeLayout nextbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        loginbutton=findViewById(R.id.loginbtn);
-        loginbutton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_data_collector_new1);
+        nextbtn=findViewById(R.id.nextbtn);
+        nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),DataCollector_Home.class);
+                Intent intent=new Intent(getApplicationContext(),DataCollector_new_activity_2.class);
                 startActivity(intent);
             }
         });

@@ -36,10 +36,11 @@
             android:layout_width="343dp"
             android:layout_height="53.15dp"
             android:layout_marginTop="32.85dp"
-            android:background="#0E0E15"
-            android:hint="yuvra201@gmail.com"
+            android:background="@drawable/rounded_edittext_background"
+            android:hint="06yuvraj2001singh@gmail.com"
             android:textColorHint="#5F5F5F"
-            />
+        />
+
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/passwdrllogin"
@@ -62,7 +63,7 @@
             android:layout_width="343dp"
             android:layout_height="53.15dp"
             android:layout_marginTop="32.85dp"
-            android:background="#0E0E15"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="Enter your Secret Password"
             android:textColorHint="#5F5F5F"
             />

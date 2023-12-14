@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15151F"
-    tools:context=".on_boarding">
+    tools:context=".SearchSpringshedData">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,28 +15,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="73dp"
-                android:text="Create an account"
+                android:text="Search Springshed Data"
                 android:textColor="#fff"
                 android:textSize="32dp"
                 android:textStyle="bold" />
             <RelativeLayout
-                android:id="@+id/namerl"
+                android:id="@+id/state"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/createaccounttxt">
+                android:layout_below="@+id/addsprtxt">
                 <TextView
                     android:layout_width="54dp"
                     android:layout_height="24dp"
-                    android:text="Name:"
-                    android:textColor="#fff"
+                    android:text="State :"
+                    android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -46,22 +47,22 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter your Name"
+                    android:hint="Enter your State Name"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/emailidrl"
+                android:id="@+id/districttxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/namerl">
+                android:layout_below="@+id/state">
                 <TextView
                     android:layout_width="75dp"
                     android:layout_height="24dp"
-                    android:text="E-Mail ID:"
-                    android:textColor="#fff"
+                    android:text="District"
+                    android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -71,22 +72,22 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="06yuvra2001singh@gmail.com"
+                    android:hint="Enter District Name"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/phoneNorl"
+                android:id="@+id/villagetxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/emailidrl">
+                android:layout_below="@+id/districttxt">
                 <TextView
                     android:layout_width="54dp"
                     android:layout_height="24dp"
-                    android:text="Phone No."
-                    android:textColor="#fff"
+                    android:text="Village"
+                    android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -96,47 +97,22 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="+91 6376179619"
+                    android:hint="Enter Village Name"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/passwordrl"
+                android:id="@+id/programname"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/phoneNorl">
-                <TextView
-                    android:layout_width="73dp"
-                    android:layout_height="24dp"
-                    android:text="Password"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
-                <EditText
-                    android:layout_width="343dp"
-                    android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
-                    android:hint="Minimum 8 Characters"
-                    android:textColorHint="#504E4E"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/confpasswdrl"
-                android:layout_width="343dp"
-                android:layout_height="86dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@+id/passwordrl">
+                android:layout_below="@+id/villagetxt">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text=" Confirm Password"
-                    android:textColor="#fff"
+                    android:text="Programme Name :"
+                    android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -146,29 +122,72 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Minimum 8 Characters"
+                    android:hint="Hadmatiya,Raipur"
                     android:textColorHint="#504E4E"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/createaccountbtn"
+                android:id="@+id/ortxt"
                 android:layout_width="wrap_content"
-                android:layout_height="58dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/button">
-
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/programname">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:text="Or"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="150dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/findonmaptxt"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/ortxt"
+                android:background="@drawable/button"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
                     android:layout_marginTop="16dp"
-                    android:text="Create Account"
+                    android:text="Plot on Map"
                     android:textAlignment="center"
                     android:textColor="#FFF"
                     android:textSize="16dp"
                     android:textStyle="bold" />
             </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/nextbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/iotmappingtxt"
+                android:background="@drawable/button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Fetch Data"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
 

@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class login extends AppCompatActivity {
-RelativeLayout loginbutton;
+public class UserType extends AppCompatActivity {
+RelativeLayout signupbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        loginbutton=findViewById(R.id.loginbtn);
-        loginbutton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_user_type);
+        signupbtn=findViewById(R.id.createaccountbtn2);
+        signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),DataCollector_Home.class);
+                Intent intent=new Intent(getApplicationContext(),create_account.class);
                 startActivity(intent);
             }
         });

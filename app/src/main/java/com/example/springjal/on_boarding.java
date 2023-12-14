@@ -18,7 +18,7 @@ RelativeLayout signupbtn,loginbtn;
         signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),create_account.class);
+                Intent intent=new Intent(getApplicationContext(),UserType.class);
                 startActivity(intent);
             }
         });

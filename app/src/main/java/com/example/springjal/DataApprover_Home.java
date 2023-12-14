@@ -3,14 +3,12 @@ package com.example.springjal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.RelativeLayout;
 
-public class create_account extends AppCompatActivity {
+public class DataApprover_Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_account);
-
+        setContentView(R.layout.activity_data_approver_home);
     }
 }

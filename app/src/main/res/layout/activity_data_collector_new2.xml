@@ -1,0 +1,151 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151F"
+    tools:context=".DataCollector_new_activity_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addsprtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="23dp"
+                android:text="Add Spring Data"
+                android:textColor="#DB4464"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:id="@+id/state"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/addsprtxt">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gmapicon"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:src="@drawable/upload_capture"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/districttxt"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/state">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Fetched Coordinates"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Latitude"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="78.132452"
+                    android:textColor="#E47070"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Longitude"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="102.132452"
+                    android:textColor="#E47070"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/additionaldetailstxt"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/dateofsurvey">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text=" Additional Details"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="Enter the additional details"
+                    android:textColorHint="#504E4E"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/savebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/iotmappingtxt"
+                android:background="@drawable/button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Save"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

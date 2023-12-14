@@ -20,7 +20,7 @@ public class doctor_patient_allocated extends AppCompatActivity {
         doctorView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),home_view_doctor_patient.class);
+                Intent intent=new Intent(getApplicationContext(), DataCollector_Home.class);
                 startActivity(intent);
             }
         });
