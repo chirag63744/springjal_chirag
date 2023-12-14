@@ -8,18 +8,38 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class UserType extends AppCompatActivity {
-RelativeLayout signupbtn;
+RelativeLayout dataCollector,dataApprover,admin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_type);
-        signupbtn=findViewById(R.id.createaccountbtn2);
-        signupbtn.setOnClickListener(new View.OnClickListener() {
+        dataCollector=findViewById(R.id.datacollecter);
+        dataApprover=findViewById(R.id.dataapprover);
+        admin=findViewById(R.id.admin);
+        dataCollector.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),create_account.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                openCreateAccountActivity("Data Collector");
             }
         });
+
+        dataApprover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateAccountActivity("Data Approver");
+            }
+        });
+
+        admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateAccountActivity("Admin");
+            }
+        });
+    }
+    private void openCreateAccountActivity(String userType) {
+        Intent intent = new Intent(UserType.this, create_account.class);
+        intent.putExtra("USER_TYPE", userType);
+        startActivity(intent);
     }
 }

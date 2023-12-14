@@ -74,7 +74,7 @@
             android:name=".doctor_patient_allocated"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".create_account"

@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="125dp"/>
     <TextView
-        android:id="@+id/patientName"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="James Bond"
@@ -26,28 +26,28 @@
         android:layout_marginLeft="127dp"
         android:layout_below="@+id/patientPhoto"/>
     <TextView
-        android:id="@+id/patientid"
+        android:id="@+id/userid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Emp Id: 20MIS0198"
         android:textColor="#fff"
         android:textSize="14dp"
         android:layout_marginLeft="139dp"
-        android:layout_below="@+id/patientName"/>
+        android:layout_below="@+id/username"/>
     <TextView
-        android:id="@+id/doctorAllocated"
+        android:id="@+id/role"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Role: Data Collector"
         android:textColor="#fff"
         android:textSize="14dp"
         android:layout_marginLeft="139dp"
-        android:layout_below="@+id/patientid"/>
+        android:layout_below="@+id/userid"/>
     <RelativeLayout
         android:id="@+id/new_activity"
         android:layout_width="369dp"
         android:layout_height="77dp"
-        android:layout_below="@+id/doctorAllocated"
+        android:layout_below="@+id/role"
         android:layout_marginLeft="30dp">
         <ImageView
             android:layout_width="56dp"

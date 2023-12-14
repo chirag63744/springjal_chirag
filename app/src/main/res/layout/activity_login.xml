@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15151F"
-    tools:context=".login">
+    tools:context=".LoginActivity">
     <TextView
         android:id="@+id/logintxtpage"
         android:layout_width="wrap_content"
@@ -33,6 +33,7 @@
             android:layout_marginTop="-1dp"
             android:layout_marginLeft="5dp" />
         <EditText
+            android:id="@+id/emailinput"
             android:layout_width="343dp"
             android:layout_height="53.15dp"
             android:layout_marginTop="32.85dp"
@@ -59,7 +60,7 @@
             android:layout_marginTop="-1dp"
             android:layout_marginLeft="5dp" />
         <EditText
-            android:id="@+id/passwd"
+            android:id="@+id/passwdinput"
             android:layout_width="343dp"
             android:layout_height="53.15dp"
             android:layout_marginTop="32.85dp"
@@ -68,10 +69,11 @@
             android:textColorHint="#5F5F5F"
             />
         <TextView
+            android:id="@+id/forgotpsswdtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot password"
-            android:layout_below="@+id/passwd"
+            android:layout_below="@+id/passwdinput"
             android:layout_marginTop="22dp"
             android:textColor="#DB4464"/>
     </RelativeLayout>
