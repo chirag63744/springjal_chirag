@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15151F"
-    tools:context=".SearchSpringshedData">
+    tools:context=".SearchUsingId">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,9 +20,9 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="73dp"
-                android:text="Search Springshed Data"
+                android:text="Search using Springshed Id"
                 android:textColor="#fff"
                 android:textSize="32dp"
                 android:textStyle="bold" />
@@ -34,84 +34,9 @@
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/addsprtxt">
                 <TextView
-                    android:layout_width="54dp"
-                    android:layout_height="24dp"
-                    android:text="State :"
-                    android:textColor="#DB4464"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
-                <EditText
-                    android:layout_width="343dp"
-                    android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter your State Name"
-                    android:textColorHint="#5F5F5F"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/districttxt"
-                android:layout_width="343dp"
-                android:layout_height="86dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@+id/state">
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="24dp"
-                    android:text="District"
-                    android:textColor="#DB4464"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
-                <EditText
-                    android:layout_width="343dp"
-                    android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter District Name"
-                    android:textColorHint="#5F5F5F"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/villagetxt"
-                android:layout_width="343dp"
-                android:layout_height="86dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@+id/districttxt">
-                <TextView
-                    android:layout_width="54dp"
-                    android:layout_height="24dp"
-                    android:text="Village"
-                    android:textColor="#DB4464"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
-                <EditText
-                    android:layout_width="343dp"
-                    android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter Village Name"
-                    android:textColorHint="#5F5F5F"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/programname"
-                android:layout_width="343dp"
-                android:layout_height="86dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@+id/villagetxt">
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Programme Name :"
+                    android:text="Enter Springshed Id :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
@@ -122,10 +47,11 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Hadmatiya,Raipur"
-                    android:textColorHint="#504E4E"
+                    android:hint="SPR3214"
+                    android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/ortxt"
                 android:layout_width="wrap_content"
@@ -174,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="60dp"
                 android:layout_below="@+id/iotmappingtxt"
                 android:background="@drawable/button">
 
@@ -192,6 +118,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 </RelativeLayout>

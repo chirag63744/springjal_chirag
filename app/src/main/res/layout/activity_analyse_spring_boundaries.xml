@@ -1,0 +1,130 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151F"
+    tools:context=".AnalyseSpringBoundaries">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sprdtatatxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="23dp"
+                android:text="Spring Shed Data"
+                android:textColor="#fff"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/pic1layout"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/addsprtxt">
+                <TextView
+                    android:id="@+id/pic1txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Picture in Year -: 2020"
+                    android:textColor="#DB4464"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/imageanalyse"
+                    android:layout_below="@+id/pic1txt"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/pic2layout"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/pic1layout">
+                <TextView
+                    android:id="@+id/pic2txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Picture in Year -: 2025"
+                    android:textColor="#DB4464"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/imageanalyse"
+                    android:layout_below="@+id/pic2txt"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/changeInaretxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/pic2layout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Change in Area"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:id="@+id/chgedArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="456 Msq"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="150dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/savebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/iotmappingtxt"
+                android:background="@drawable/button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Analyse"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

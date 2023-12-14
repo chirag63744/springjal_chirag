@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class SearchSpringshedData extends AppCompatActivity {
+public class SearchUsingId extends AppCompatActivity {
 RelativeLayout fetchbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_springshed_data);
+        setContentView(R.layout.activity_search_using_id);
         fetchbtn=findViewById(R.id.fetchbtn);
         fetchbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), SpringPlotsMapsActivity.class);
+                Intent intent=new Intent(getApplicationContext(),SpringShedIotData.class);
                 startActivity(intent);
             }
         });

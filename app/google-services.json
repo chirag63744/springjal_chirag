@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989140358334",
+    "project_id": "springjal-66c38",
+    "storage_bucket": "springjal-66c38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989140358334:android:9f9d2f6fc1780048297aef",
+        "android_client_info": {
+          "package_name": "com.example.springjal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMmZCRIq1NWMMg7EKFxACBbLVTWPtprn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

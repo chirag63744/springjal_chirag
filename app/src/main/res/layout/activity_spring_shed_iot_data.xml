@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15151F"
-    tools:context=".SearchSpringshedData">
+    tools:context=".SpringShedIotData">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,9 +20,9 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="73dp"
-                android:text="Search Springshed Data"
+                android:text="Springshed IOT Sensor Data"
                 android:textColor="#fff"
                 android:textSize="32dp"
                 android:textStyle="bold" />
@@ -34,9 +34,9 @@
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/addsprtxt">
                 <TextView
-                    android:layout_width="54dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="State :"
+                    android:text="Spring Shed Id :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
@@ -47,21 +47,21 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter your State Name"
-                    android:textColorHint="#5F5F5F"
+                    android:hint="SPR3213"
+                    android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/districttxt"
+                android:id="@+id/gaugewaterflow"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/state">
                 <TextView
-                    android:layout_width="75dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="District"
+                    android:text="Gauge Water Flow :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
@@ -72,21 +72,21 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter District Name"
-                    android:textColorHint="#5F5F5F"
+                    android:hint="321 m/s"
+                    android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/villagetxt"
+                android:id="@+id/waterqualitytxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/districttxt">
                 <TextView
-                    android:layout_width="54dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Village"
+                    android:text="Water Quality"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
@@ -97,12 +97,12 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Enter Village Name"
-                    android:textColorHint="#5F5F5F"
+                    android:hint="234 Ppm"
+                    android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/programname"
+                android:id="@+id/phleveltxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
@@ -111,7 +111,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Programme Name :"
+                    android:text="Ph Level :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
@@ -122,73 +122,36 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="Hadmatiya,Raipur"
-                    android:textColorHint="#504E4E"
+                    android:hint="7"
+                    android:textColorHint="#fff"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/ortxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:id="@+id/overallstatustxt"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/programname">
+                android:layout_below="@+id/villagetxt">
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Or"
-                    android:textColor="#fff"
+                    android:layout_height="24dp"
+                    android:text="Overall Status :"
+                    android:textColor="#DB4464"
                     android:textStyle="bold"
-                    android:textSize="24dp"
+                    android:textSize="16dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="150dp" />
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="Good"
+                    android:textColorHint="#59EE12"
+                    />
             </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/findonmaptxt"
-                android:layout_width="wrap_content"
-                android:layout_height="58dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
-                android:layout_below="@+id/ortxt"
-                android:background="@drawable/button"
-                >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/maps"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="4dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Plot on Map"
-                    android:textAlignment="center"
-                    android:textColor="#FFF"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/fetchbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="58dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
-                android:layout_below="@+id/iotmappingtxt"
-                android:background="@drawable/button">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Fetch Data"
-                    android:textAlignment="center"
-                    android:textColor="#FFF"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>

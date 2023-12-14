@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">springjal</string>
+    <string name="title_activity_spring_plots_maps">SpringPlotsMapsActivity</string>
 </resources>

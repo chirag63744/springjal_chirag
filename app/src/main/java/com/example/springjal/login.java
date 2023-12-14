@@ -17,7 +17,7 @@ RelativeLayout loginbutton;
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),DataCollector_Home.class);
+                Intent intent=new Intent(getApplicationContext(),DataCollector_new_activity_1.class);
                 startActivity(intent);
             }
         });
