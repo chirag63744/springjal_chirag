@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#15151F"
-    tools:context=".RecievedActivity">
+    tools:context=".SearchResultActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="110dp"
                 android:layout_marginTop="73dp"
-                android:text="Recieved Activities"
+                android:text="Search Results"
                 android:textColor="#fff"
                 android:textSize="32dp"
                 android:textStyle="bold" />

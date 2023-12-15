@@ -32,7 +32,7 @@ public class StatusDataCollector extends AppCompatActivity {
 
         // Initialize adapter with an empty list (will be updated later)
         activityList = new ArrayList<>();
-        activityAdapter = new StatusAdapter(activityList);
+        activityAdapter = new StatusAdapter(activityList,this);
         recyclerView.setAdapter(activityAdapter);
     }
 

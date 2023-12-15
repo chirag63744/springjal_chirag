@@ -19,12 +19,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecievedActivityAdapter extends RecyclerView.Adapter<RecievedActivityAdapter.ActivityViewHolder> {
+public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapter.ActivityViewHolder> {
 
-    private List<RecievedActivityModel> activities;
+    private List<SearchResultModel> activities;
     private Context context;
 
-    public RecievedActivityAdapter(List<RecievedActivityModel> activities,Context context) {
+    public SearchResultAdapter(List<SearchResultModel> activities,Context context) {
         this.activities = activities != null ? activities : new ArrayList<>();
         this.context = context;
     }
@@ -33,19 +33,16 @@ public class RecievedActivityAdapter extends RecyclerView.Adapter<RecievedActivi
     public static class ActivityViewHolder extends RecyclerView.ViewHolder {
         // Declare views from activity_card_view.xml
         TextView activityNameTextView;
-        TextView activityStatusTextView;
-        Button reviewEditButton;
-        Button approvebtn;
-        Button rejectbtn;
+        TextView villagenametextview;
+        Button viewdatabtn;
+
 
         public ActivityViewHolder(View itemView) {
             super(itemView);
             // Initialize views
             activityNameTextView = itemView.findViewById(R.id.activityNameTextView);
-            activityStatusTextView = itemView.findViewById(R.id.activityStatusTextView);
-            reviewEditButton = itemView.findViewById(R.id.reviewEditButton);
-            approvebtn = itemView.findViewById(R.id.approvebtn);
-            rejectbtn = itemView.findViewById(R.id.rejectbtn);
+            villagenametextview = itemView.findViewById(R.id.activityStatusTextView);
+            viewdatabtn = itemView.findViewById(R.id.viewDatabtn);
         }
     }
 
@@ -53,48 +50,26 @@ public class RecievedActivityAdapter extends RecyclerView.Adapter<RecievedActivi
     @Override
     public ActivityViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflate the card view layout
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recieved_activity_card_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.search_result_card, parent, false);
         return new ActivityViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ActivityViewHolder holder, int position) {
         // Bind data to views for each activity item
-        RecievedActivityModel activity = activities.get(position);
+        SearchResultModel activity = activities.get(position);
         holder.activityNameTextView.setText(activity.getActivityName());
-        holder.activityStatusTextView.setText(activity.getApprovalStatus());
+        holder.villagenametextview.setText(activity.getApprovalStatus());
 
         // Handle button actions here (Review/Edit, Approve, Reject)
-        holder.reviewEditButton.setOnClickListener(v -> {
+        holder.viewdatabtn.setOnClickListener(v -> {
             // Handle Review/Edit button click
             // Implement your logic here
             fetchActivityData(activity.getActivityName());
         });
 
-        holder.approvebtn.setOnClickListener(v -> {
-            // Handle Approve button click
-            updateApprovalStatus(activity.getActivityName(), "Approved");
-        });
-
-        holder.rejectbtn.setOnClickListener(v -> {
-            // Handle Reject button click
-            updateApprovalStatus(activity.getActivityName(), "Rejected");
-        });
     }
-    private void updateApprovalStatus(String activityId, String status) {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        DocumentReference activityRef = db.collection("activities").document(activityId);
 
-        activityRef.update("approvalStatus", status)
-                .addOnSuccessListener(aVoid -> {
-                    // Update successful
-                    Toast.makeText(context, "Status updated successfully", Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(e -> {
-                    // Update failed
-                    Toast.makeText(context, "Failed to update status: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                });
-    }
     private void fetchActivityData(String activityId) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference activityRef = db.collection("activities").document(activityId);

@@ -43,6 +43,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/stateEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -68,6 +69,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/districtEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -93,6 +95,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/villageEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -118,6 +121,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/programEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"

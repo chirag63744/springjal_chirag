@@ -63,7 +63,7 @@ RelativeLayout recievedActivities,SearchSpringData,analyseSpringBoundaries,Analy
         recievedActivities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),DataCollector_new_activity_1.class);
+                Intent intent=new Intent(getApplicationContext(),RecievedActivity.class);
                 startActivity(intent);
             }
         });

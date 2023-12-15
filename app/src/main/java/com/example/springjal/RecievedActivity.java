@@ -21,7 +21,7 @@ public class RecievedActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_status_data_collector);
+        setContentView(R.layout.activity_recieved);
 
         // Initialize RecyclerView and layout manager
         recyclerView = findViewById(R.id.recycler_view_activities);
