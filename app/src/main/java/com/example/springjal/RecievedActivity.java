@@ -13,10 +13,10 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StatusDataCollector extends AppCompatActivity {
+public class RecievedActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private StatusAdapter activityAdapter;
-    private List<StatusActivityModel> activityList;
+    private  RecievedActivityAdapter activityAdapter;
+    private List<RecievedActivityModel> activityList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class StatusDataCollector extends AppCompatActivity {
 
         // Initialize adapter with an empty list (will be updated later)
         activityList = new ArrayList<>();
-        activityAdapter = new StatusAdapter(activityList);
+        activityAdapter = new RecievedActivityAdapter(activityList,this);
         recyclerView.setAdapter(activityAdapter);
     }
 
@@ -48,7 +48,7 @@ public class StatusDataCollector extends AppCompatActivity {
                         String approvalStatus = documentSnapshot.getString("approvalStatus");
 
                         // Create a StatusActivityModel object with the activity ID as its name
-                        StatusActivityModel activity = new StatusActivityModel(activityId, approvalStatus);
+                        RecievedActivityModel activity = new RecievedActivityModel(activityId, approvalStatus);
 
                         // Add the activity to the list
                         activityList.add(activity);

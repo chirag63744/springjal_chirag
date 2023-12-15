@@ -1,0 +1,68 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_cardview_background">
+
+    <!-- Layout for activity information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TextViews -->
+        <TextView
+            android:id="@+id/activityNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Name"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/activityStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Status"
+            android:textSize="16sp"/>
+        <!-- Buttons for actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/reviewEditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review/Edit"
+                android:background="@drawable/rounded_button_background"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:background="@drawable/rounded_button_background"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id="@+id/withdrawButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Withdraw"
+                android:background="@drawable/rounded_button_background"
+                android:padding="8dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

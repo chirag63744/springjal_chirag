@@ -6,9 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import androidx.annotation.NonNull;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 public class Admin_Home extends AppCompatActivity {
 RelativeLayout recievedActivities,SearchSpringData,analyseSpringBoundaries,Analytics,springPlot;
+    private TextView usernameTextView;
+    private TextView roleTextView;
+    private FirebaseAuth mAuth;
+    private DatabaseReference userRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +30,36 @@ RelativeLayout recievedActivities,SearchSpringData,analyseSpringBoundaries,Analy
         analyseSpringBoundaries=findViewById(R.id.analysespringshed);
         Analytics=findViewById(R.id.analytics);
         springPlot=findViewById(R.id.spring_plot_all);
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
+        // Find TextViews by their IDs
+        usernameTextView = findViewById(R.id.username);
+        roleTextView = findViewById(R.id.role);
+
+        // Assuming you have a users node in your Firebase Realtime Database
+        userRef = FirebaseDatabase.getInstance().getReference().child("users").child(mAuth.getCurrentUser().getUid());
+
+        // Add a ValueEventListener to fetch user data
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    // Get the user's name and role from the snapshot
+                    String username = dataSnapshot.child("name").getValue().toString();
+                    String role = dataSnapshot.child("role").getValue().toString();
+
+                    // Set the retrieved values in the TextViews
+                    usernameTextView.setText(username);
+                    roleTextView.setText("Role: " + role);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                // Handle potential errors here
+            }
+        });
         recievedActivities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

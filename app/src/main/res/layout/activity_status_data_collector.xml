@@ -38,8 +38,14 @@
                 android:textSize="13dp"
                 android:textStyle="bold" />
 
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+
+
         </LinearLayout>
     </ScrollView>
-
-
 </RelativeLayout>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.springjal"
         tools:targetApi="31">
         <activity
+            android:name=".RecievedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".StatusDataCollector"
             android:exported="false" />
         <activity

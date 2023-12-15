@@ -38,7 +38,8 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/gmapicon"/>
 
-                <ImageButton
+                <ImageView
+                    android:id="@+id/imageinput"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200dp"
@@ -70,6 +71,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="5dp" />
                 <TextView
+                    android:id="@+id/latitudeinput"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="78.132452"
@@ -88,6 +90,7 @@
                     android:layout_marginTop="40dp"
                     android:layout_marginLeft="5dp" />
                 <TextView
+                    android:id="@+id/longitudeinput"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="102.132452"
@@ -116,6 +119,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/additionaldetailsinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -125,7 +129,7 @@
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/savebtn"
+                android:id="@+id/uploadbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_marginLeft="110dp"

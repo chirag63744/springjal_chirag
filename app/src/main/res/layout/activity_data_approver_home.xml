@@ -8,14 +8,14 @@
     android:background="#15151F"
     tools:context=".DataApprover_Home">
     <ImageView
-        android:id="@+id/patientPhoto"
+        android:id="@+id/userphoto"
         android:layout_width="146dp"
         android:layout_height="113dp"
         android:src="@drawable/patient1"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="125dp"/>
     <TextView
-        android:id="@+id/patientName"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Thomas Shellby"
@@ -24,30 +24,30 @@
         android:textStyle="bold"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="100dp"
-        android:layout_below="@+id/patientPhoto"/>
+        android:layout_below="@+id/userphoto"/>
     <TextView
-        android:id="@+id/patientid"
+        android:id="@+id/userid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Emp Id: 20MIS0196"
         android:textColor="#fff"
         android:textSize="14dp"
         android:layout_marginLeft="139dp"
-        android:layout_below="@+id/patientName"/>
+        android:layout_below="@+id/username"/>
     <TextView
-        android:id="@+id/doctorAllocated"
+        android:id="@+id/role"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Role: Data Approver"
         android:textColor="#fff"
         android:textSize="14dp"
         android:layout_marginLeft="139dp"
-        android:layout_below="@+id/patientid"/>
+        android:layout_below="@+id/userid"/>
     <RelativeLayout
         android:id="@+id/recievedActivity"
         android:layout_width="369dp"
         android:layout_height="77dp"
-        android:layout_below="@+id/doctorAllocated"
+        android:layout_below="@+id/role"
         android:layout_marginLeft="30dp">
         <ImageView
             android:layout_width="56dp"

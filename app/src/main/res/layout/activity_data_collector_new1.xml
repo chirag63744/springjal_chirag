@@ -54,6 +54,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/statenameinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -79,6 +80,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/districtnameinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -104,6 +106,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/villagenameinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -120,7 +123,7 @@
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/villagetxt">
                 <TextView
-                    android:layout_width="73dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Benefeciery"
                     android:textColor="#fff"
@@ -129,6 +132,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/benefeciaryinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -154,6 +158,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/statusinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -179,6 +184,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/dateofsurveyinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
@@ -204,6 +210,7 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
+                    android:id="@+id/iotdeviceidinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
