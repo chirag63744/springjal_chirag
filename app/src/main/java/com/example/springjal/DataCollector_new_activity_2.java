@@ -34,21 +34,31 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
     TextView latitude, longitude;
     EditText additionalDetails;
     private Uri imageUri; // Declaration of imageUri variable
-
+    String state,district,village,beneficiary,status,dateOfSurvey,iotDeviceId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_collector_new2);
         // Handle image input
+        Intent intent=  getIntent();
+        state = intent.getStringExtra("STATE");
+        district = intent.getStringExtra("DISTRICT");
+        village = intent.getStringExtra("VILLAGE");
+        beneficiary = intent.getStringExtra("BENEFICIARY");
+        status = intent.getStringExtra("STATUS");
+        dateOfSurvey = intent.getStringExtra("DATE_OF_SURVEY");
+        iotDeviceId = intent.getStringExtra("IOT_DEVICE_ID");
         springimage = findViewById(R.id.imageinput);
         latitude = findViewById(R.id.latitudeinput);
         gmapCurrent=findViewById(R.id.gmapImgButn);
         longitude = findViewById(R.id.longitudeinput);
         additionalDetails = findViewById(R.id.additionaldetailsinput);
-        double valuelatitude = getIntent().getDoubleExtra("latitude", 0.0);
-        double valuelongitude = getIntent().getDoubleExtra("longitude", 0.0);
-        latitude.setText(""+valuelatitude);
-        longitude.setText(""+valuelongitude);
+        double latitudedouble=intent.getDoubleExtra("latitude",0.0);
+        double longitudedouble=intent.getDoubleExtra("longitude",0.0);
+        String latstr=String.valueOf(latitudedouble);
+        String longstr=String.valueOf(longitudedouble);
+        latitude.setText(latstr);
+        longitude.setText(longstr);
         uploadbtn = findViewById(R.id.uploadbtn);
         springimage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +69,21 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
         gmapCurrent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                state = intent.getStringExtra("STATE");
+                district = intent.getStringExtra("DISTRICT");
+                village = intent.getStringExtra("VILLAGE");
+                beneficiary = intent.getStringExtra("BENEFICIARY");
+                status = intent.getStringExtra("STATUS");
+                dateOfSurvey = intent.getStringExtra("DATE_OF_SURVEY");
+                iotDeviceId = intent.getStringExtra("IOT_DEVICE_ID");
                 Intent i = new Intent(DataCollector_new_activity_2.this, Fetch_coordinates.class);
+                i.putExtra("STATE", state);
+                i.putExtra("DISTRICT", district);
+                i.putExtra("VILLAGE", village);
+                i.putExtra("BENEFICIARY", beneficiary);
+                i.putExtra("STATUS", status);
+                i.putExtra("DATE_OF_SURVEY", dateOfSurvey);
+                i.putExtra("IOT_DEVICE_ID", iotDeviceId);
                 startActivity(i);
             }
         });
@@ -69,7 +93,7 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
             public void onClick(View v) {
                 if (imageUri != null) {
                     // Upload the image to Firebase Storage
-                    uploadImageToFirebaseStorage();
+                    uploadImageToFirebaseStorage(state,district,village,beneficiary,status,dateOfSurvey,iotDeviceId);
                 } else {
                     Toast.makeText(getApplicationContext(), "Please capture an image first", Toast.LENGTH_SHORT).show();
                 }
@@ -110,7 +134,7 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
         return Uri.parse(path);
     }
 
-    private void uploadImageToFirebaseStorage() {
+    private void uploadImageToFirebaseStorage(String state,String district,String village,String beneficiary,String status,String dateOfSurvey,String iotDeviceId) {
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReference();
 
@@ -123,20 +147,13 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
                     imageRef.getDownloadUrl().addOnSuccessListener(uri -> {
                         String imageUrl = uri.toString();
                         // Retrieve data from the previous activity
-                        Intent intent = getIntent();
-                        String state = intent.getStringExtra("STATE");
-                        String district = intent.getStringExtra("DISTRICT");
-                        String village = intent.getStringExtra("VILLAGE");
-                        String beneficiary = intent.getStringExtra("BENEFICIARY");
-                        String status = intent.getStringExtra("STATUS");
-                        String dateOfSurvey = intent.getStringExtra("DATE_OF_SURVEY");
-                        String iotDeviceId = intent.getStringExtra("IOT_DEVICE_ID");
 
                         String latitudetxt = latitude.getText().toString();
                         String longtxt = longitude.getText().toString();
                         String additionaldetailstxt = additionalDetails.getText().toString();
                         // Save all data including imageUrl to Firestore
                         saveDataToFirestore(state, district, village, beneficiary, status, dateOfSurvey, iotDeviceId, latitudetxt, longtxt, additionaldetailstxt, imageUrl);
+                   //     Toast.makeText(this,village,Toast.LENGTH_SHORT).show();
                     });
                 })
                 .addOnFailureListener(e -> {

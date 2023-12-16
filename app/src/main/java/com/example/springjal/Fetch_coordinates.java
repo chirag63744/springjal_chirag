@@ -37,13 +37,20 @@ public class Fetch_coordinates extends AppCompatActivity implements OnMapReadyCa
     // Variables to store coordinates
     private double latitude;
     private double longitude;
-
+    String state,district,village,beneficiary,status,dateOfSurvey,iotDeviceId;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fetch_coordinates);
-
+        Intent intent=  getIntent();
+        state = intent.getStringExtra("STATE");
+        district = intent.getStringExtra("DISTRICT");
+        village = intent.getStringExtra("VILLAGE");
+        beneficiary = intent.getStringExtra("BENEFICIARY");
+        status = intent.getStringExtra("STATUS");
+        dateOfSurvey = intent.getStringExtra("DATE_OF_SURVEY");
+        iotDeviceId = intent.getStringExtra("IOT_DEVICE_ID");
         // Initialize the FusedLocationProviderClient
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         fetch = findViewById(R.id.fetchCoordinatesbtn);
@@ -106,7 +113,13 @@ public class Fetch_coordinates extends AppCompatActivity implements OnMapReadyCa
         // Add the coordinates as extras to the Intent
         intent.putExtra("latitude", latitude);
         intent.putExtra("longitude", longitude);
-
+        intent.putExtra("STATE", state);
+        intent.putExtra("DISTRICT", district);
+        intent.putExtra("VILLAGE", village);
+        intent.putExtra("BENEFICIARY", beneficiary);
+        intent.putExtra("STATUS", status);
+        intent.putExtra("DATE_OF_SURVEY", dateOfSurvey);
+        intent.putExtra("IOT_DEVICE_ID", iotDeviceId);
         // Start the new activity
         startActivity(intent);
     }
