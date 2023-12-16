@@ -59,7 +59,7 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
         gmapCurrent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(DataCollector_new_activity_2.this, Fetch_Current_location.class);
+                Intent i = new Intent(DataCollector_new_activity_2.this, Fetch_coordinates.class);
                 startActivity(i);
             }
         });
