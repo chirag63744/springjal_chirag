@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 public class SearchUsingId extends AppCompatActivity {
 RelativeLayout fetchbtn,fetchIotSensor,analysSpringbtn;
 EditText springshedId;
+String springid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,7 @@ EditText springshedId;
         fetchbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String springid=springshedId.getText().toString();
+                 springid=springshedId.getText().toString();
                 fetchActivityData(springid);
             }
         });
@@ -48,6 +49,8 @@ EditText springshedId;
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),SpringShedIotData.class);
+                springid=springshedId.getText().toString();
+                intent.putExtra("deviceid", springid);
                 startActivity(intent);
 
             }
