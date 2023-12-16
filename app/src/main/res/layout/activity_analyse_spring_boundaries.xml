@@ -28,11 +28,22 @@
 
             <RelativeLayout
                 android:id="@+id/pic1layout"
-                android:layout_width="343dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/addsprtxt">
+
+                <TextView
+                    android:id="@+id/picpreprocesstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Picture in Year -: 2020"
+                    android:textColor="#DB4464"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
                 <TextView
                     android:id="@+id/pic1txt"
                     android:layout_width="wrap_content"
@@ -50,10 +61,18 @@
                     android:src="@drawable/imageanalyse"
                     android:layout_below="@+id/pic1txt"
                     android:layout_marginBottom="10dp"/>
+                <ImageView
+                    android:id="@+id/preprocessedimage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/imageanalyse"
+                    android:layout_below="@+id/pic1txt"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="10dp"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/pic2layout"
-                android:layout_width="343dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="23dp"
@@ -68,6 +87,16 @@
                     android:textColor="#DB4464"
                     android:textSize="13dp"
                     android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/pic2preprocesstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Picture in Year -: 2025"
+                    android:textColor="#DB4464"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
                 <ImageView
                     android:id="@+id/image2"
                     android:layout_width="wrap_content"
@@ -75,6 +104,14 @@
                     android:src="@drawable/imageanalyse"
                     android:layout_below="@+id/pic2txt"
                     android:layout_marginBottom="10dp"/>
+                <ImageView
+                    android:id="@+id/image2preprocessed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/imageanalyse"
+                    android:layout_below="@+id/pic2txt"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="19dp"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/changeInaretxt"
