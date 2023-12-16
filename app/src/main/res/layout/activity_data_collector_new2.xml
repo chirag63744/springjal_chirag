@@ -26,24 +26,39 @@
                 android:textColor="#DB4464"
                 android:textSize="13dp"
                 android:textStyle="bold" />
+
             <RelativeLayout
                 android:id="@+id/state"
-                android:layout_width="343dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_width="379dp"
+                android:layout_height="142dp"
+                android:layout_below="@+id/addsprtxt"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/addsprtxt">
+                android:layout_marginTop="15dp">
+
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/gmapicon"/>
+                    android:id="@+id/gmapImgButn"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:src="@drawable/gmapicon" />
 
                 <ImageView
                     android:id="@+id/imageinput"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200dp"
-                    android:src="@drawable/upload_capture"/>
+                    android:src="@drawable/upload_capture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/white"
+                    android:text="Choose In Map">
+
+                </TextView>
+
+
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/districttxt"
@@ -148,6 +163,7 @@
                     android:textSize="16dp"
                     android:textStyle="bold" />
             </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
 

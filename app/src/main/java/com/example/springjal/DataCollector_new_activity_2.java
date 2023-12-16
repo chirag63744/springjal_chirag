@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -29,6 +30,7 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
     RelativeLayout uploadbtn;
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     ImageView springimage;
+    ImageButton gmapCurrent;
     TextView latitude, longitude;
     EditText additionalDetails;
     private Uri imageUri; // Declaration of imageUri variable
@@ -40,13 +42,25 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
         // Handle image input
         springimage = findViewById(R.id.imageinput);
         latitude = findViewById(R.id.latitudeinput);
+        gmapCurrent=findViewById(R.id.gmapImgButn);
         longitude = findViewById(R.id.longitudeinput);
         additionalDetails = findViewById(R.id.additionaldetailsinput);
+        double valuelatitude = getIntent().getDoubleExtra("latitude", 0.0);
+        double valuelongitude = getIntent().getDoubleExtra("longitude", 0.0);
+        latitude.setText(""+valuelatitude);
+        longitude.setText(""+valuelongitude);
         uploadbtn = findViewById(R.id.uploadbtn);
         springimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dispatchTakePictureIntent();
+            }
+        });
+        gmapCurrent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DataCollector_new_activity_2.this, Fetch_Current_location.class);
+                startActivity(i);
             }
         });
 
@@ -180,7 +194,10 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
     }
 
     private String generateActivityId(String villagename) {
-        int count = villageActivityCount.getOrDefault(villagename, 0) + 1;
+        int count = 0;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            count = villageActivityCount.getOrDefault(villagename, 0) + 1;
+        }
         villageActivityCount.put(villagename, count);
         String paddedCount = padNumber(count, 4);
         return villagename.substring(0, Math.min(villagename.length(), 3)).toLowerCase() + paddedCount;
