@@ -29,6 +29,7 @@ import java.util.UUID;
 public class DataCollector_new_activity_2 extends AppCompatActivity {
     RelativeLayout uploadbtn;
     private static final int REQUEST_IMAGE_CAPTURE = 1;
+    private static final int REQUEST_IMAGE_FROM_GALLERY = 2;
     ImageView springimage;
     ImageButton gmapCurrent;
     TextView latitude, longitude;
@@ -63,7 +64,8 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
         springimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dispatchTakePictureIntent();
+             //   dispatchTakePictureIntent();
+                selectFromGallery();
             }
         });
         gmapCurrent.setOnClickListener(new View.OnClickListener() {
@@ -101,6 +103,11 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
         });
     }
 
+    private void selectFromGallery() {
+        Intent galleryIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(galleryIntent, REQUEST_IMAGE_FROM_GALLERY);
+    }
+
     // Image capture logic
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -124,6 +131,18 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
                 }
             }
         }
+        else if (requestCode == REQUEST_IMAGE_FROM_GALLERY && resultCode == RESULT_OK) {
+            if (data != null && data.getData() != null) {
+                imageUri = data.getData();
+                try {
+                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+                    // Display the selected image
+                    springimage.setImageBitmap(bitmap);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     // Method to convert Bitmap to Uri
@@ -137,7 +156,6 @@ public class DataCollector_new_activity_2 extends AppCompatActivity {
     private void uploadImageToFirebaseStorage(String state,String district,String village,String beneficiary,String status,String dateOfSurvey,String iotDeviceId) {
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReference();
-
         String imageName = "images/" + UUID.randomUUID() + ".jpg"; // Generate a unique image name
 
         StorageReference imageRef = storageRef.child(imageName);

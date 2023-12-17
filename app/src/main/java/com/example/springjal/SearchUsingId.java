@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 public class SearchUsingId extends AppCompatActivity {
-RelativeLayout fetchbtn,fetchIotSensor,analysSpringbtn;
+RelativeLayout fetchbtn,fetchIotSensor,analysSpringbtn,findonmap;
 EditText springshedId;
 String springid;
     @Override
@@ -31,6 +31,8 @@ String springid;
         fetchIotSensor=findViewById(R.id.fetchIotdata);
         analysSpringbtn=findViewById(R.id.analyseadmin);
         springshedId=findViewById(R.id.springshedidedittext);
+        findonmap=findViewById(R.id.findonmaptxt);
+
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
@@ -38,6 +40,13 @@ String springid;
             // Check if the user is an admin
             checkAdminStatus(userId);
         }
+        findonmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),SpringPlotsMapsActivity.class);
+                startActivity(intent);
+            }
+        });
         fetchbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +101,7 @@ String springid;
                 if (dataSnapshot.exists()) {
                     String role = dataSnapshot.child("role").getValue(String.class);
                     // Check if the user has the role of an admin
-                    if (role != null && role.equals("Data Approver")) {
+                    if (role != null && role.equals("Admin")) {
                         // User is an admin, show the admin button
                         analysSpringbtn.setVisibility(View.VISIBLE);
                     } else {

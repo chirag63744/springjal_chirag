@@ -28,6 +28,7 @@ RelativeLayout loginBtn;
     private FirebaseAuth mAuth;
     private EditText emailInput, passwordInput;
     private TextView forgotPasswordTxt;
+    String emailtxtinput;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +36,10 @@ RelativeLayout loginBtn;
 
         mAuth = FirebaseAuth.getInstance();
 
+
         emailInput = findViewById(R.id.emailinput);
         passwordInput = findViewById(R.id.passwdinput);
+
 
         loginBtn = findViewById(R.id.loginbtn);
         loginBtn.setOnClickListener(new View.OnClickListener() {
