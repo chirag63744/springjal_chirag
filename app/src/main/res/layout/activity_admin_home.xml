@@ -8,6 +8,14 @@
     android:background="#15151F"
     tools:context=".Admin_Home">
     <ImageView
+        android:id="@+id/logoutbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logout"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
         android:id="@+id/userphoto"
         android:layout_width="146dp"
         android:layout_height="113dp"
@@ -193,13 +201,48 @@
         <ImageView
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@drawable/feedback"
+            android:src="@drawable/filter"
             android:layout_marginTop="13dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search Using Filter"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="28dp"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            app:srcCompat="@drawable/red_arrow"
+            android:layout_marginLeft="319dp"
+            android:layout_marginTop="28dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:textColor="#9A8787"
+            android:text="______________________________________________________"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/sendmessage"
+        android:layout_width="369dp"
+        android:layout_height="77dp"
+        android:layout_below="@+id/spring_data_filter"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/message"
+            android:layout_marginTop="13dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Text Alert Message"
             android:textStyle="bold"
             android:textSize="20dp"
             android:textColor="#fff"
