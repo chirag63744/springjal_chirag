@@ -11,34 +11,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/BarchartActivity"
+            android:layout_width="369dp"
+            android:layout_height="77dp"
+            android:layout_below="@+id/role"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/new_activity" />
 
             <TextView
-                android:id="@+id/createaccounttxt"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="73dp"
-                android:text="Analytics"
-                android:textColor="#fff"
-                android:textSize="32dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/addsprtxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="23dp"
-                android:text="Activities"
-                android:textColor="#DB4464"
-                android:textSize="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="90dp"
+
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="143dp"
+                android:layout_marginBottom="24dp"
+                android:text=" BarChart"
+                android:textColor="#fff"
+                android:textSize="19dp"
                 android:textStyle="bold" />
 
-        </LinearLayout>
+        </RelativeLayout>
+
     </ScrollView>
 
 
