@@ -37,10 +37,8 @@ public class BarChart_WaterQuality extends AppCompatActivity {
         yAxis.setAxisMaximum(0f);
         yAxis.setAxisMaximum(100f);
         yAxis.setAxisLineWidth(2f);
-        //hfszgdzhrs
         yAxis.setAxisLineColor(Color.BLACK);
         yAxis.setLabelCount(10);
-
         BarDataSet dataSet= new BarDataSet(enteries,"Quality");
         dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
         BarData barData=new BarData(dataSet);
