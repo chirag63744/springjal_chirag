@@ -98,5 +98,12 @@ public class Admin_Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        SearchSpringData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SearchSpringshedData.class);
+                startActivity(intent);
+            }
+        });
     }
 }
