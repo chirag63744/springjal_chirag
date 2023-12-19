@@ -49,6 +49,15 @@ public class ReviewActivity extends AppCompatActivity {
             statusinput.setText(status);
             dateofsurveyinput.setText(dateOfSurvey);
             iotdeviceidinput.setText(iotDeviceId);
+            //make EditText fields non-editable
+            activityid.setEnabled(false);
+            statenameinput.setEnabled(false);
+            districtnameinput.setEnabled(false);
+            villagenameinput.setEnabled(false);
+            benefeciaryinput.setEnabled(false);
+            statusinput.setEnabled(false);
+            dateofsurveyinput.setEnabled(false);
+            iotdeviceidinput.setEnabled(false);
         }
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override

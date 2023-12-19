@@ -35,15 +35,24 @@
             android:orientation="horizontal"
             android:layout_marginTop="16dp">
 
-            <Button
+            <RelativeLayout
                 android:id="@+id/viewDatabtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View Data"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button"
                 android:padding="8dp"
                 android:textColor="@color/white"
-                />
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Data"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="20dp"
+                    />
+            </RelativeLayout>
 
 
         </LinearLayout>

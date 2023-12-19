@@ -16,17 +16,28 @@
         map:layout_constraintTop_toTopOf="parent"
         tools:context=".Fetch_Current_location" />
 
-    <Button
+    <RelativeLayout
+        android:id="@+id/fetchCoordinatesbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/fetchCoordinatesbtn"
         android:layout_marginBottom="28dp"
+        android:background="@drawable/button2"
+        android:backgroundTint="#5BADD3"
+        android:text="Fetch Coordinates"
         map:layout_constraintBottom_toBottomOf="parent"
+
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintHorizontal_bias="0.498"
-        android:text="Fetch Coordinates"
         map:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch Coordinates"
+            android:textSize="19dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="23dp"
+            android:textColor="#fff"/>
 
-    </Button>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

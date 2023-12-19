@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".ReviewActivity">
 
     <ScrollView
@@ -21,10 +21,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginLeft="110dp"
-                android:layout_marginTop="73dp"
-                android:text="New Activity"
-                android:textColor="#fff"
-                android:textSize="32dp"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:text="Review"
+                android:textAlignment="center"
+                android:textColor="#213C89"
+                android:textSize="45dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -34,7 +36,7 @@
                 android:layout_marginLeft="23dp"
                 android:layout_marginTop="23dp"
                 android:text="Add Spring Data"
-                android:textColor="#DB4464"
+                android:textColor="#5BADD3"
                 android:textSize="13dp"
                 android:textStyle="bold" />
             <RelativeLayout
@@ -48,7 +50,7 @@
                     android:layout_width="54dp"
                     android:layout_height="24dp"
                     android:text="State:"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -58,8 +60,8 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter your State Name"
+                    android:textColor="#E8E8EC"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
@@ -74,7 +76,7 @@
                     android:layout_width="75dp"
                     android:layout_height="24dp"
                     android:text="District"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -84,7 +86,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter District Name"
                     android:textColorHint="#5F5F5F"
                     />
@@ -100,7 +101,7 @@
                     android:layout_width="54dp"
                     android:layout_height="24dp"
                     android:text="Village"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -110,8 +111,8 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter Village Name"
+                    android:textColor="#E8E8EC"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
@@ -126,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Benefeciery"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -136,8 +137,8 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Hadmatiya,Raipur"
+                    android:textColor="#E8E8EC"
                     android:textColorHint="#504E4E"
                     />
             </RelativeLayout>
@@ -152,7 +153,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text=" Status"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -162,9 +163,9 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Under Construction / Completed"
                     android:textColorHint="#504E4E"
+                    android:textColor="#E8E8EC"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -178,7 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text=" Date of Survey"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -188,9 +189,9 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="12/12/2023"
                     android:textColorHint="#504E4E"
+                    android:textColor="#E8E8EC"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -204,7 +205,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text=" Iot Device Mapping Id"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -214,9 +215,9 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter the Id written on the Module eg-:SNMP1243"
                     android:textColorHint="#504E4E"
+                    android:textColor="#E8E8EC"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -226,7 +227,7 @@
                 android:layout_marginLeft="110dp"
                 android:layout_marginTop="30dp"
                 android:layout_below="@+id/iotmappingtxt"
-                android:background="@drawable/button">
+                android:background="@drawable/button2">
 
                 <TextView
                     android:layout_width="wrap_content"

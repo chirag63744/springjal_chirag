@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="#FFFFFF"
     tools:context=".on_boarding">
 
-    <TextView
-        android:id="@+id/springjaltxt"
-        android:layout_width="253dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="63dp"
-        android:layout_marginTop="121dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Springजल"
-        android:textColor="#fff"
-        android:textSize="32dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/swm2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/descriptiontxt"
-        android:layout_width="317dp"
-        android:layout_height="151dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="44.5dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="238dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into s PageMaker including versions of Lorem Ipsum"
-        android:textColor="#fff"
-        android:textSize="12dp" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <RelativeLayout
         android:id="@+id/loginButton"
         android:layout_width="254dp"
         android:layout_height="58dp"
-        android:layout_below="@+id/descriptiontxt"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="131dp"
-        android:background="@drawable/button"
-        android:clipToOutline="true">
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button2"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpbtn"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/loginButtontxt"
@@ -60,12 +60,14 @@
         android:id="@+id/signUpbtn"
         android:layout_width="254dp"
         android:layout_height="58dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="28dp"
         android:layout_below="@+id/loginButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="84dp"
         android:background="@drawable/button"
-        android:clipToOutline="true">
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <TextView
             android:id="@+id/signupbtntxt"
@@ -81,5 +83,4 @@
     </RelativeLayout>
 
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

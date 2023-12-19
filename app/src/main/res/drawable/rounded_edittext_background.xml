@@ -5,6 +5,6 @@
         android:right="12dp"
         android:top="8dp"
         android:bottom="8dp" />
-    <solid android:color="#423E3E" /> <!-- Set your desired background color -->
+    <solid android:color="#D2E6F1" /> <!-- Set your desired background color -->
     <corners android:radius="10dp" /> <!-- Set the corner radius -->
 </shape>

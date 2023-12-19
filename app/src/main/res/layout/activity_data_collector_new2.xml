@@ -9,111 +9,153 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bck">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/addsprtxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="23dp"
-                android:text="Add Spring Data"
-                android:textColor="#DB4464"
-                android:textSize="13dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="28dp"
+                android:text="Enter Spring Data"
+                android:textColor="#213C89"
+                android:textSize="35dp"
                 android:textStyle="bold" />
 
             <RelativeLayout
                 android:id="@+id/state"
                 android:layout_width="379dp"
-                android:layout_height="142dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/addsprtxt"
                 android:layout_marginLeft="23dp"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="30dp">
 
                 <ImageButton
                     android:id="@+id/gmapImgButn"
-                    android:layout_width="115dp"
-                    android:layout_height="108dp"
-                    android:src="@drawable/gmapicon" />
+                    android:layout_width="138dp"
+                    android:layout_height="138dp"
+                    android:src="@drawable/map" />
 
                 <ImageView
                     android:id="@+id/imageinput"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200dp"
-                    android:src="@drawable/upload_capture" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="2dp"
-                    android:textColor="@color/white"
-                    android:text="Choose In Map">
-
-                </TextView>
+                    android:src="@drawable/camera" />
 
 
             </RelativeLayout>
             <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/button2"
+                    android:layout_marginTop="28dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="11dp"
+                        android:textSize="19dp"
+                        android:text="View Map Plot"
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="230dp"
+                    android:background="@drawable/button2"
+                    android:layout_marginTop="28dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="13dp"
+                        android:textSize="18dp"
+                        android:text="Uploaded Image"
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+                
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/districttxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/state"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/state">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Fetched Coordinates"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="Fetched Coordinates"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Latitude"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="Latitude"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/latitudeinput"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="20dp"
                     android:text="78.132452"
                     android:textColor="#E47070"
-                    android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="90dp" />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Longitude"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="40dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="Longitude"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="60dp"
+                    android:text="State Name: Himachal Pradesh"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/longitudeinput"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
                     android:text="102.132452"
                     android:textColor="#E47070"
-                    android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginLeft="90dp" />
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -121,43 +163,44 @@
                 android:id="@+id/additionaldetailstxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/dateofsurvey"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/dateofsurvey">
+                android:layout_marginTop="15dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text=" Additional Details"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text=" Additional Details"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/additionaldetailsinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter the additional details"
-                    android:textColorHint="#504E4E"
-                    />
+                    android:textColorHint="#504E4E" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/uploadbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
+                android:layout_below="@+id/iotmappingtxt"
                 android:layout_marginLeft="110dp"
                 android:layout_marginTop="30dp"
-                android:layout_below="@+id/iotmappingtxt"
                 android:background="@drawable/button">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
-                    android:text="Save"
+                    android:text="Approve"
                     android:textAlignment="center"
                     android:textColor="#FFF"
                     android:textSize="16dp"

@@ -15,7 +15,6 @@ RelativeLayout dataCollector,dataApprover,admin;
         setContentView(R.layout.activity_user_type);
         dataCollector=findViewById(R.id.datacollecter);
         dataApprover=findViewById(R.id.dataapprover);
-        admin=findViewById(R.id.admin);
         dataCollector.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

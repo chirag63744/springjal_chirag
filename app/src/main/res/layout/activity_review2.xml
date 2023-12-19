@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".ReviewActivity_2">
 
     <ScrollView
@@ -14,36 +14,38 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/addsprtxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="23dp"
-                android:text="Add Spring Data"
-                android:textColor="#DB4464"
-                android:textSize="13dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="28dp"
+                android:text="See Spring Data"
+                android:textColor="#213C89"
+                android:textSize="35dp"
                 android:textStyle="bold" />
             <RelativeLayout
                 android:id="@+id/state"
-                android:layout_width="343dp"
+                android:layout_width="379dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/addsprtxt">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/gmapicon"/>
+                    android:id="@+id/gmapImgButn1"
+                    android:layout_width="138dp"
+                    android:layout_height="138dp"
+                    android:src="@drawable/map"/>
 
                 <ImageView
-                    android:id="@+id/imageinput"
+                    android:id="@+id/imageinput1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200dp"
-                    android:src="@drawable/upload_capture"/>
+                    android:src="@drawable/camera"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/districttxt"
@@ -56,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Fetched Coordinates"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -65,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Latitude"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="20dp"
@@ -75,7 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="78.132452"
-                    android:textColor="#E47070"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="20dp"
@@ -84,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Longitude"
-                    android:textColor="#fff"
+                    android:textColor="#213C89"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="40dp"
@@ -94,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="102.132452"
-                    android:textColor="#E47070"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="40dp"
@@ -106,14 +108,14 @@
                 android:id="@+id/additionaldetailstxt"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/dateofsurvey">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text=" Additional Details"
-                    android:textColor="#fff"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -123,7 +125,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter the additional details"
                     android:textColorHint="#504E4E"
                     />

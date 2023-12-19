@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".SpringShedIotData">
 
     <ScrollView
@@ -21,9 +21,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="73dp"
+                android:layout_marginTop="130dp"
                 android:text="Springshed IOT Sensor Data"
-                android:textColor="#fff"
+                android:textColor="#213C89"
                 android:textSize="32dp"
                 android:textStyle="bold" />
             <RelativeLayout
@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Spring Shed Id :"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -47,7 +47,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="SPR3213"
                     android:textColorHint="#DB8344"
                     />
@@ -63,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Gauge Water Flow :"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -73,7 +72,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="321 m/s"
                     android:textColorHint="#DB8344"
                     />
@@ -116,20 +114,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Ph Level :"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
+
                 <EditText
                     android:id="@+id/phlevelrledittextdisplay"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="7"
-                    android:textColorHint="#DB8344"
-                    />
+                    android:textColor="#03A9F4"
+                     />                    
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/temperaturerl"
@@ -208,6 +206,7 @@
                     android:hint="876 ppm"
                     android:textColorHint="#fff"
                     />
+
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/gasvaluerl"
@@ -401,7 +400,7 @@
                 android:layout_below="@+id/trihalomethanesrl">
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="24dp"
+                    android:layout_height="24dp"         
                     android:text="Status :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
@@ -413,7 +412,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Good"
                     android:textColorHint="#59EE12"
                     />
