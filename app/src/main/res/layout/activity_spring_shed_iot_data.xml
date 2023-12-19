@@ -78,39 +78,40 @@
                     android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
+
             <RelativeLayout
-                android:id="@+id/waterqualitytxt"
+                android:id="@+id/turbidityrl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/districttxt">
+                android:layout_below="@+id/gaugewaterflow">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Water Quality"
+                    android:text="Turbidity :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
-                    android:id="@+id/waterqualitydata"
+                    android:id="@+id/turbidityedittextdisplay"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
-                    android:hint="234 Ppm"
+                    android:hint="223 NTU"
                     android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/phleveltxt"
+                android:id="@+id/phlevelrl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/villagetxt">
+                android:layout_below="@+id/turbidityrl">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
@@ -121,33 +122,190 @@
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
-                    android:id="@+id/phleveldata"
+                    android:id="@+id/phlevelrledittextdisplay"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:background="@drawable/rounded_edittext_background"
                     android:hint="7"
-                    android:textColorHint="#fff"
+                    android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/overallstatustxt"
+                android:id="@+id/temperaturerl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/villagetxt">
+                android:layout_below="@+id/phlevelrl">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text="Overall Status :"
+                    android:text="Temperature :"
                     android:textColor="#DB4464"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
-                    android:id="@+id/overallstatusdata"
+                    android:id="@+id/temperatureedittextinput"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="7 Degree Centigrate"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/conductivityrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/temperaturerl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Conductivity :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/conductivityEdittextDisplay"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="233 s/m"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/disssolvedoxygenrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/conductivityrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="DO (Dissolved Oxygen) :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/disssolvedoxygenedittextdisplay"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="876 ppm"
+                    android:textColorHint="#fff"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gasvaluerl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/disssolvedoxygenrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Gas Value :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/gasvalueedittxt"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="675 m^3"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/hardnessrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/disssolvedoxygenrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Hardness :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/hardnessEdittextDatadisplay"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="7"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/solidsrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/disssolvedoxygenrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Solids :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/solidsedittextdisplay"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="9833 ppm"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statusrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/solidsrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Status :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/statusedittextDisplay"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"

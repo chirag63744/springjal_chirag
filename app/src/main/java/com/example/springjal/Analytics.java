@@ -9,15 +9,24 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class Analytics extends AppCompatActivity {
-    RelativeLayout Barchrt;
+    RelativeLayout rainfallvsspring,waterqulity;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analytics);
-        Barchrt =findViewById(R.id.BarchartActivity);
-        Barchrt.setOnClickListener(new View.OnClickListener() {
+        rainfallvsspring =findViewById(R.id.rainfallvsspring);
+        waterqulity =findViewById(R.id.waterqulity);
+        rainfallvsspring.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(Analytics.this, BarChart_WaterQuality.class);
+                startActivity(i);
+            }
+        });
+        waterqulity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Analytics.this, BarChart_WaterQuality.class);

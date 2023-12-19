@@ -75,7 +75,7 @@ public class SpringPlotsMapsActivity extends FragmentActivity implements OnMapRe
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         // Set the initial camera position to India
         LatLng indiaLatLng = new LatLng(20.5937, 78.9629); // Latitude and Longitude of India
         mMap.moveCamera(CameraUpdateFactory.newLatLng(indiaLatLng));

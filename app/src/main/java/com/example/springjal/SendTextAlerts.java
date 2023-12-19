@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class patient_home extends AppCompatActivity {
+public class SendTextAlerts extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_home);
+        setContentView(R.layout.activity_send_text_alerts);
+
     }
 }
