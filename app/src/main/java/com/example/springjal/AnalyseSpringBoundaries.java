@@ -42,8 +42,18 @@ TextView changeAre;
         analysebtn=findViewById(R.id.analysebtn);
         Intent in=getIntent();
          imageurl=in.getStringExtra("imageurl");
-        Picasso.get().load(imageurl).into(image1);
-        Picasso.get().load(imageurl).into(image2);
+        Picasso.get()
+                .load(imageurl)
+                .resize(600, 800) // Provide valid positive integers for width and height
+                .centerInside()
+                .into(image1);
+        Picasso.get()
+                .load(imageurl)
+                .resize(600, 800) // Provide valid positive integers for width and height
+                .centerInside()
+                .into(image2);
+
+
         analysebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -166,8 +176,18 @@ TextView changeAre;
 
                 // Fetch the "area" data
                  link = jsonObject.getString("output_image_url");
-                Picasso.get().load(link).into(preprocessimg1);
-                Picasso.get().load(link).into(preproceessimg2);
+
+                Picasso.get()
+                        .load(link)
+                        .resize(600, 800) // Provide valid positive integers for width and height
+                        .centerInside()
+                        .into(preprocessimg1);
+                Picasso.get()
+                        .load(link)
+                        .resize(600, 800) // Provide valid positive integers for width and height
+                        .centerInside()
+                        .into(preproceessimg2);
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }

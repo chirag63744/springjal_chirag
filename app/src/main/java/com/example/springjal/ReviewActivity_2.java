@@ -33,7 +33,11 @@ public class ReviewActivity_2 extends AppCompatActivity {
             latitudeinput.setText(latitude);
             longitudeinput.setText(longitude);
             additionaldetailsinput.setText(additionalDetails);
-            Picasso.get().load(imageUrl).into(image);
+            Picasso.get()
+                    .load(imageUrl)
+                    .resize(600, 800) // Provide valid positive integers for width and height
+                    .centerInside()
+                    .into(image);
         }
     }
 }

@@ -287,6 +287,110 @@
                     android:textColorHint="#DB8344"
                     />
             </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/chlorominerl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/solidsrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Chloroamine :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/chloromineedittxt"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="342 ppm"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sulfaterl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/chlorominerl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Sulfate :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/sulfateedt"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="321 ppm"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ogcrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/chlorominerl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Organic Carbon :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/organiccarbnedt"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="232 ppm"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/trihalomethanesrl"
+                android:layout_width="343dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@+id/ogcrl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Trihalo Methane :"
+                    android:textColor="#DB4464"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/trihalomethaneet"
+                    android:layout_width="343dp"
+                    android:layout_height="53.15dp"
+                    android:layout_marginTop="32.85dp"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:hint="232 ppm"
+                    android:textColorHint="#DB8344"
+                    />
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/statusrl"
@@ -294,7 +398,7 @@
                 android:layout_height="86dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/solidsrl">
+                android:layout_below="@+id/trihalomethanesrl">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
