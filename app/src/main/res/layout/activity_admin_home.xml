@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/bck"
     tools:context=".Admin_Home">
-
-    <ImageView
-        android:id="@+id/logoutbtn"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/brain_bank_logo" />
-
     <ImageView
         android:id="@+id/userphoto"
         android:layout_width="146dp"
@@ -136,10 +127,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="15dp"
-            android:text="Spring Shed Data"
-            android:textColor="#fff"
+            android:text="Spring Shed Plots"
+            android:textStyle="bold"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textColor="#fff"/>
 
     </RelativeLayout>
 
