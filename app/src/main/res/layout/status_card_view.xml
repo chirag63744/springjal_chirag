@@ -6,15 +6,15 @@
     android:background="@drawable/rounded_cardview_background">
 
     <!-- Layout for activity information -->
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/activityNameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <!-- TextViews -->
         <TextView
-            android:id="@+id/activityNameTextView"
+            android:id="@+id/activityNameTextViewtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Activity Name"
@@ -22,47 +22,69 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/activityStatusTextView"
+            android:id="@+id/activityStatusTextViewtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/activityNameTextViewtxt"
             android:layout_marginTop="8dp"
             android:text="Status"
             android:textSize="16sp"/>
-        <!-- Buttons for actions -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp">
 
-            <Button
-                android:id="@+id/reviewEditButton"
+        <!-- Buttons for actions -->
+        <RelativeLayout
+            android:id="@+id/reviewEditButton"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/activityStatusTextViewtxt"
+            android:layout_marginTop="16dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reviewEditButtontxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Review/Edit"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button2"
                 android:padding="8dp"
-                android:textColor="@color/white"
-                android:layout_marginRight="8dp"/>
+                android:textColor="@color/white"/>
+        </RelativeLayout>
 
-            <Button
-                android:id="@+id/uploadButton"
+        <RelativeLayout
+            android:id="@+id/uploadButton"
+            android:layout_width="80dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/activityStatusTextViewtxt"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:layout_toEndOf="@id/reviewEditButton">
+
+            <TextView
+                android:id="@+id/uploadButtontxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Upload"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button2"
                 android:padding="8dp"
-                android:textColor="@color/white"
-                android:layout_marginRight="8dp"/>
+                android:textColor="@color/white" />
+        </RelativeLayout>
 
-            <Button
-                android:id="@+id/withdrawButton"
+        <RelativeLayout
+            android:id="@+id/withdrawButton"
+            android:layout_width="100dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/activityStatusTextViewtxt"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:layout_toEndOf="@id/uploadButton">
+
+            <TextView
+                android:id="@+id/withdrawButtontxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Withdraw"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button2"
                 android:padding="8dp"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-    </LinearLayout>
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

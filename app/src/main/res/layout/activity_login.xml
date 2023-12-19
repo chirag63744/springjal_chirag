@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".LoginActivity">
     <TextView
         android:id="@+id/logintxtpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
-        android:textColor="#fff"
+        android:textColor="#213C89"
         android:textStyle="bold"
         android:textSize="32dp"
         android:layout_marginLeft="149dp"
-        android:layout_marginTop="73dp"/>
+        android:layout_marginTop="120dp"/>
     <RelativeLayout
         android:id="@+id/loginrl"
         android:layout_width="343dp"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email Id:"
-            android:textColor="#fff"
+            android:textColor="#5BADD3"
             android:textStyle="bold"
             android:textSize="16dp"
             android:layout_marginTop="-1dp"
@@ -37,45 +37,52 @@
             android:layout_width="343dp"
             android:layout_height="53.15dp"
             android:layout_marginTop="32.85dp"
-            android:background="@drawable/rounded_edittext_background"
             android:hint="06yuvraj2001singh@gmail.com"
             android:textColorHint="#5F5F5F"
+            android:textColor="#000000"
         />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/passwdrllogin"
         android:layout_width="343dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_below="@+id/loginrl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
         android:layout_marginLeft="23dp"
-        android:layout_below="@+id/loginrl">
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="45dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="-1dp"
-            android:layout_marginLeft="5dp" />
+            android:text="Password"
+            android:textColor="#5BADD3"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/passwdinput"
             android:layout_width="343dp"
             android:layout_height="53.15dp"
             android:layout_marginTop="32.85dp"
-            android:background="@drawable/rounded_edittext_background"
             android:hint="Enter your Secret Password"
-            android:textColorHint="#5F5F5F"
-            />
+            android:textColor="#000000"
+            android:textColorHint="#5F5F5F" />
+
         <TextView
             android:id="@+id/forgotpsswdtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot password"
             android:layout_below="@+id/passwdinput"
             android:layout_marginTop="22dp"
-            android:textColor="#DB4464"/>
+            android:text="Forgot password"
+            android:textColor="#DB4464" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/loginbtn"
@@ -83,7 +90,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="90dp"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:layout_below="@+id/passwdrllogin">
         <TextView
             android:layout_width="wrap_content"

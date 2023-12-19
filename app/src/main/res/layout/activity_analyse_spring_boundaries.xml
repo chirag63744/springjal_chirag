@@ -1,10 +1,9 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".AnalyseSpringBoundaries">
 
     <ScrollView
@@ -14,7 +13,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="110dp">
+
             <TextView
                 android:id="@+id/sprdtatatxt"
                 android:layout_width="wrap_content"
@@ -22,123 +23,133 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="23dp"
                 android:text="Spring Shed Data"
-                android:textColor="#fff"
+                android:textColor="#213C89"
                 android:textSize="32dp"
                 android:textStyle="bold" />
 
             <RelativeLayout
                 android:id="@+id/pic1layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/addsprtxt"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/addsprtxt">
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:id="@+id/picpreprocesstxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="190dp"
+                    android:layout_marginLeft="223dp"
                     android:layout_marginTop="23dp"
                     android:text="Picture in Year -: 2020"
                     android:textColor="#DB4464"
                     android:textSize="13dp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/pic1txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="7dp"
+                    android:layout_marginLeft="23dp"
                     android:layout_marginTop="23dp"
                     android:text="Picture in Year -: 2020"
                     android:textColor="#DB4464"
                     android:textSize="13dp"
                     android:textStyle="bold" />
+
                 <ImageView
                     android:id="@+id/image1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/imageanalyse"
                     android:layout_below="@+id/pic1txt"
-                    android:layout_marginBottom="10dp"/>
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/imageanalyse" />
+
                 <ImageView
                     android:id="@+id/preprocessedimage1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/imageanalyse"
                     android:layout_below="@+id/pic1txt"
                     android:layout_marginLeft="200dp"
-                    android:layout_marginBottom="10dp"/>
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/imageanalyse" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/pic2layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/pic1layout"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/pic1layout">
+                android:layout_marginTop="15dp">
+
                 <TextView
                     android:id="@+id/pic2txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="7dp"
+                    android:layout_marginLeft="23dp"
                     android:layout_marginTop="23dp"
                     android:text="Picture in Year -: 2025"
                     android:textColor="#DB4464"
                     android:textSize="13dp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/pic2preprocesstxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="190dp"
+                    android:layout_marginLeft="223dp"
                     android:layout_marginTop="23dp"
                     android:text="Picture in Year -: 2025"
                     android:textColor="#DB4464"
                     android:textSize="13dp"
                     android:textStyle="bold" />
+
                 <ImageView
                     android:id="@+id/image2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/imageanalyse"
                     android:layout_below="@+id/pic2txt"
-                    android:layout_marginBottom="10dp"/>
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/imageanalyse" />
+
                 <ImageView
                     android:id="@+id/image2preprocessed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/imageanalyse"
                     android:layout_below="@+id/pic2txt"
                     android:layout_marginLeft="200dp"
-                    android:layout_marginBottom="19dp"/>
+                    android:layout_marginBottom="19dp"
+                    android:src="@drawable/imageanalyse" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/changeInaretxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/pic2layout"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/pic2layout">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-1dp"
                     android:text="Change in Area"
                     android:textColor="#DB4464"
-                    android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp"
-                    />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/chgedArea"
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
+                    android:layout_marginLeft="150dp"
                     android:text="456 Msq"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
+                    android:textColor="#5BADD3"
                     android:textSize="16dp"
-                    android:layout_marginLeft="150dp" />
+                    android:textStyle="bold" />
             </RelativeLayout>
 
 
@@ -146,9 +157,9 @@
                 android:id="@+id/analysebtn"
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
+                android:layout_below="@+id/iotmappingtxt"
                 android:layout_marginLeft="110dp"
                 android:layout_marginTop="30dp"
-                android:layout_below="@+id/iotmappingtxt"
                 android:background="@drawable/button">
 
                 <TextView

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".SearchUsingId">
 
     <ScrollView
@@ -21,9 +21,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="73dp"
+                android:layout_marginTop="150dp"
                 android:text="Search using Springshed Id"
-                android:textColor="#fff"
+                android:textColor="#213C89"
                 android:textSize="32dp"
                 android:textStyle="bold" />
             <RelativeLayout
@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Enter Springshed Id or Iot Device Id:"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginTop="-1dp"
@@ -47,7 +47,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="SPR3214"
                     android:textColorHint="#5F5F5F"
                     />
@@ -63,12 +62,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Or"
-                    android:textColor="#fff"
+                    android:text="------Or------"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="24dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="150dp" />
+                    android:layout_marginLeft="100dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/findonmaptxt"
@@ -77,18 +76,13 @@
                 android:layout_marginLeft="110dp"
                 android:layout_marginTop="20dp"
                 android:layout_below="@+id/ortxt"
-                android:background="@drawable/button"
+                android:background="@drawable/button2"
                 >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/maps"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="4dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="50dp"
                     android:layout_marginTop="16dp"
                     android:text="Find on Map"
                     android:textAlignment="center"
@@ -101,14 +95,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_marginLeft="110dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="35dp"
                 android:layout_below="@+id/iotmappingtxt"
-                android:background="@drawable/button">
+                android:background="@drawable/button2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="48dp"
                     android:layout_marginTop="16dp"
                     android:text="Fetch all Data"
                     android:textAlignment="center"
@@ -121,9 +115,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="35dp"
                 android:layout_below="@+id/iotmappingtxt"
-                android:background="@drawable/button">
+                android:background="@drawable/button2">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -141,9 +135,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="35dp"
                 android:layout_below="@+id/fetchbtn"
-                android:background="@drawable/button">
+                android:background="@drawable/button2">
 
                 <TextView
                     android:layout_width="wrap_content"

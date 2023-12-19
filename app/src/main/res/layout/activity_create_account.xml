@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="#FFFFFF"
     tools:context=".on_boarding">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bck">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
@@ -22,139 +25,150 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="73dp"
                 android:text="Create an account"
-                android:textColor="#fff"
+                android:textColor="#213C89"
                 android:textSize="32dp"
                 android:textStyle="bold" />
+
             <RelativeLayout
                 android:id="@+id/namerl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/createaccounttxt"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/createaccounttxt">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="54dp"
                     android:layout_height="24dp"
-                    android:text="Name:"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="Name"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/nameinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Enter your Name"
-                    android:textColorHint="#5F5F5F"
-                    />
+                    android:textColor="#000000"
+                    android:textColorHint="#5F5F5F" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/emailidrl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/namerl"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/namerl">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="75dp"
                     android:layout_height="24dp"
-                    android:text="E-Mail ID:"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="E-Mail ID"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/emailinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
-                    android:hint="06yuvra2001singh@gmail.com"
-                    android:textColorHint="#5F5F5F"
-                    />
+                    android:hint="humsaathsaathhai@gmail.com"
+                    android:textColor="#000000"
+                    android:textColorHint="#5F5F5F" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/phoneNorl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/emailidrl"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/emailidrl">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="54dp"
                     android:layout_height="24dp"
-                    android:text="Phone No."
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="Phone"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/phoneinout"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="+91 6376179619"
-                    android:textColorHint="#5F5F5F"
-                    />
+                    android:textColor="#000000"
+                    android:textColorHint="#5F5F5F" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/passwordrl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/phoneNorl"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/phoneNorl">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="73dp"
                     android:layout_height="24dp"
-                    android:text="Password"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text="Password:"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/passwdinput"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Minimum 8 Characters"
-                    android:textColorHint="#504E4E"
-                    />
+                    android:textColor="#000000"
+                    android:textColorHint="#504E4E" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/confpasswdrl"
                 android:layout_width="343dp"
                 android:layout_height="86dp"
-                android:layout_marginTop="44dp"
+                android:layout_below="@+id/passwordrl"
                 android:layout_marginLeft="23dp"
-                android:layout_below="@+id/passwordrl">
+                android:layout_marginTop="44dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:text=" Confirm Password"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="5dp" />
+                    android:text=" Confirm Password"
+                    android:textColor="#4587A5"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/confirmpasswd_input"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="Minimum 8 Characters"
-                    android:textColorHint="#504E4E"
-                    />
+                    android:textColor="#000000"
+                    android:textColorHint="#504E4E" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/createaccountbtn"
                 android:layout_width="wrap_content"

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,9 +34,9 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.ActivityVi
         // Declare views from activity_card_view.xml
         TextView activityNameTextView;
         TextView activityStatusTextView;
-        Button reviewEditButton;
-        Button uploadButton;
-        Button withdrawButton;
+        RelativeLayout reviewEditButton;
+        RelativeLayout uploadButton;
+        RelativeLayout withdrawButton;
 
         public ActivityViewHolder(View itemView) {
             super(itemView);

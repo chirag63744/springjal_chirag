@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".SearchSpringshedData">
 
     <ScrollView
@@ -21,9 +21,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="73dp"
+                android:layout_marginTop="120dp"
                 android:text="Search Springshed Data"
-                android:textColor="#fff"
+                android:textColor="#213C89"
                 android:textSize="32dp"
                 android:textStyle="bold" />
             <RelativeLayout
@@ -37,18 +37,18 @@
                     android:layout_width="54dp"
                     android:layout_height="24dp"
                     android:text="State :"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
+                    android:layout_marginTop="-5dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
                     android:id="@+id/stateEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
+                    android:layout_marginTop="15dp"
                     android:hint="Enter your State Name"
+                    android:textColor="#E8E8EC"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
@@ -63,18 +63,18 @@
                     android:layout_width="75dp"
                     android:layout_height="24dp"
                     android:text="District"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
+                    android:layout_marginTop="-5dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
                     android:id="@+id/districtEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
+                    android:layout_marginTop="15dp"
                     android:hint="Enter District Name"
+                    android:textColor="#E8E8EC"
                     android:textColorHint="#5F5F5F"
                     />
             </RelativeLayout>
@@ -89,19 +89,19 @@
                     android:layout_width="54dp"
                     android:layout_height="24dp"
                     android:text="Village"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
+                    android:layout_marginTop="-5dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
                     android:id="@+id/villageEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
+                    android:layout_marginTop="15dp"
                     android:hint="Enter Village Name"
                     android:textColorHint="#5F5F5F"
+                    android:textColor="#E8E8EC"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -115,82 +115,77 @@
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:text="Programme Name :"
-                    android:textColor="#DB4464"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="16dp"
-                    android:layout_marginTop="-1dp"
+                    android:layout_marginTop="-5dp"
                     android:layout_marginLeft="5dp" />
                 <EditText
                     android:id="@+id/programEditText"
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
-                    android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
+                    android:layout_marginTop="15dp"
                     android:hint="Hadmatiya,Raipur"
                     android:textColorHint="#504E4E"
+                    android:textColor="#E8E8EC"
                     />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/ortxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="-1dp"
                 android:layout_marginLeft="23dp"
                 android:layout_below="@+id/programname">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Or"
-                    android:textColor="#fff"
+                    android:text="------Or------"
+                    android:textColor="#5BADD3"
                     android:textStyle="bold"
                     android:textSize="24dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginLeft="150dp" />
+
+                    android:layout_marginLeft="100dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/findonmaptxt"
-                android:layout_width="wrap_content"
+                android:layout_width="186dp"
                 android:layout_height="58dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
                 android:layout_below="@+id/ortxt"
-                android:background="@drawable/button"
-                >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/maps"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="4dp"/>
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button2">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="13dp"
                     android:text="Plot on Map"
                     android:textAlignment="center"
                     android:textColor="#FFF"
-                    android:textSize="16dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/fetchbtn"
-                android:layout_width="wrap_content"
+                android:layout_width="254dp"
                 android:layout_height="58dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
                 android:layout_below="@+id/iotmappingtxt"
                 android:background="@drawable/button">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="14dp"
                     android:text="Fetch Data"
                     android:textAlignment="center"
                     android:textColor="#FFF"
-                    android:textSize="16dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
             </RelativeLayout>
 

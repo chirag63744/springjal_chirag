@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="@drawable/bck"
     tools:context=".SearchResultActivity">
 
     <ScrollView
@@ -21,9 +21,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginLeft="110dp"
-                android:layout_marginTop="73dp"
+                android:layout_marginTop="130dp"
                 android:text="Search Results"
-                android:textColor="#fff"
+                android:textColor="#213C89"
                 android:textSize="32dp"
                 android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
                 android:layout_marginLeft="23dp"
                 android:layout_marginTop="23dp"
                 android:text="Activities"
-                android:textColor="#DB4464"
+                android:textColor="#5BADD3"
                 android:textSize="13dp"
                 android:textStyle="bold" />
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="#FFFFFF"
     tools:context=".Analytics">
 
     <ScrollView
@@ -36,7 +36,7 @@
                 android:layout_marginEnd="143dp"
                 android:layout_marginBottom="24dp"
                 android:text=" BarChart"
-                android:textColor="#fff"
+                android:textColor="#5BADD3"
                 android:textSize="19dp"
                 android:textStyle="bold" />
 

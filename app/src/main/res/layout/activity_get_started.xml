@@ -5,39 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15151F"
+    android:background="#FFFFFF"
     tools:context=".get_started">
 
     <ImageView
         android:id="@+id/app_logo_getstarted"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="85dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="54.5dp"
-        android:layout_marginTop="85dp"
-        android:background="@drawable/get_started" />
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="106dp"
+        android:background="@drawable/swm2" />
 
-    <TextView
-        android:id="@+id/welcometxt"
-        android:layout_width="279dp"
-        android:layout_height="96dp"
-        android:layout_below="@+id/app_logo_getstarted"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="60dp"
-        android:text="Welcome to  Springजल"
-        android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="32dp"
-        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/swmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo_getstarted"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="87dp"
+        android:src="@drawable/group" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:id="@+id/get_startedbtn"
         android:layout_width="201dp"
         android:layout_height="58dp"
+        android:layout_below="@+id/swmid"
         android:layout_marginLeft="110dp"
-        android:layout_marginTop="70dp"
-        android:layout_below="@+id/welcometxt"
+        android:layout_marginTop="112dp"
         android:background="@drawable/button"
         android:clipToOutline="true">
 

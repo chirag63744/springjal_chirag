@@ -91,12 +91,8 @@
         <activity
             android:name=".DataCollector_Home"
             android:exported="false" />
-        <activity
-            android:name=".patient_home"
-            android:exported="false" />
-        <activity
-            android:name=".doctor_patient_allocated"
-            android:exported="false" />
+
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
