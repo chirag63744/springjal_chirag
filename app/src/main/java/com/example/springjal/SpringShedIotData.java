@@ -175,11 +175,12 @@ public class SpringShedIotData extends AppCompatActivity {
                                         {
                                             status.setText("BAD");
                                             status.setTextColor(Color.RED);
+                                            updateStatusonfirebase("BAD");
                                         }
                                         else{
                                             status.setText("GOOD");
                                             status.setTextColor(Color.GREEN);
-
+                                            updateStatusonfirebase("GOOD");
                                         }
                                     } catch (JSONException e) {
                                         e.printStackTrace();
@@ -205,6 +206,26 @@ public class SpringShedIotData extends AppCompatActivity {
             }
         });
     }
+
+    private void updateStatusonfirebase(String statusValue) {
+        // Reference to the Firebase database
+        DatabaseReference firebaseRef = FirebaseDatabase.getInstance().getReference()
+                .child("springshediotsecuredata")
+                .child("spr8561714") // Replace "your_device_id" with your actual device ID
+                .child("status"); // Assuming the status is stored under the "status" node
+
+        // Set the status value in Firebase
+        firebaseRef.setValue(statusValue)
+                .addOnSuccessListener(aVoid -> {
+                    // Status update successful
+                    Toast.makeText(this, "Status updated in Firebase", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    // Status update failed
+                    Toast.makeText(this, "Failed to update status: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+    }
+
 
     private void makePrediction() {
 
