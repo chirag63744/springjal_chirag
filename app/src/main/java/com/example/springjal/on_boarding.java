@@ -19,6 +19,7 @@ public class on_boarding extends AppCompatActivity {
     // Request code for location permission
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1001;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
