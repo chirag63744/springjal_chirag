@@ -20,11 +20,11 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="130dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="135dp"
                 android:text="Springshed IOT Sensor Data"
                 android:textColor="#213C89"
-                android:textSize="32dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
             <RelativeLayout
                 android:id="@+id/state"
@@ -100,7 +100,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="223 NTU"
                     android:textColorHint="#DB8344"
                     />
@@ -153,7 +152,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="7 Degree Centigrate"
                     android:textColorHint="#DB8344"
                     />
@@ -179,7 +177,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="233 s/m"
                     android:textColorHint="#DB8344"
                     />
@@ -205,9 +202,8 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="876 ppm"
-                    android:textColorHint="#fff"
+                    android:textColorHint="#353333"
                     />
 
             </RelativeLayout>
@@ -232,7 +228,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="675 m^3"
                     android:textColorHint="#DB8344"
                     />
@@ -258,7 +253,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="7"
                     android:textColorHint="#DB8344"
                     />
@@ -284,7 +278,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="9833 ppm"
                     android:textColorHint="#DB8344"
                     />
@@ -310,7 +303,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="342 ppm"
                     android:textColorHint="#DB8344"
                     />
@@ -336,7 +328,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="321 ppm"
                     android:textColorHint="#DB8344"
                     />
@@ -362,7 +353,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="232 ppm"
                     android:textColorHint="#DB8344"
                     />
@@ -388,7 +378,6 @@
                     android:layout_width="343dp"
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
-                    android:background="@drawable/rounded_edittext_background"
                     android:hint="232 ppm"
                     android:textColorHint="#DB8344"
                     />
