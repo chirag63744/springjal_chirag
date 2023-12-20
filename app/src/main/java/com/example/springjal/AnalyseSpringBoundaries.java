@@ -123,7 +123,7 @@ TextView changeAre;
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            changeAre.setText(areaString);
+            changeAre.setText(""+0);
         }
 
     }
