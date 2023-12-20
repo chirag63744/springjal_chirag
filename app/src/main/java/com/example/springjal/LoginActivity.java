@@ -24,11 +24,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
-RelativeLayout loginBtn;
+    RelativeLayout loginBtn;
     private FirebaseAuth mAuth;
     private EditText emailInput, passwordInput;
     private TextView forgotPasswordTxt;
     String emailtxtinput;
+    private loading loadingDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,10 +38,8 @@ RelativeLayout loginBtn;
 
         mAuth = FirebaseAuth.getInstance();
 
-
         emailInput = findViewById(R.id.emailinput);
         passwordInput = findViewById(R.id.passwdinput);
-
 
         loginBtn = findViewById(R.id.loginbtn);
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +56,8 @@ RelativeLayout loginBtn;
                 // Implement your forgot password logic here
             }
         });
+
+        loadingDialog = new loading(LoginActivity.this);
     }
 
     private void loginUser() {
@@ -72,15 +74,15 @@ RelativeLayout loginBtn;
             return;
         }
 
+        loadingDialog.show(); // Show loading dialog
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
                             if (user != null) {
-                                // Retrieve user role from database (assuming it's stored under "role")
                                 DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(user.getUid());
                                 userRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
@@ -88,7 +90,6 @@ RelativeLayout loginBtn;
                                         if (dataSnapshot.exists()) {
                                             String userType = dataSnapshot.child("role").getValue(String.class);
                                             if (userType != null) {
-                                                // Redirect user based on their role
                                                 switch (userType) {
                                                     case "Data Collector":
                                                         startActivity(new Intent(LoginActivity.this, DataCollector_Home.class));
@@ -97,34 +98,33 @@ RelativeLayout loginBtn;
                                                     case "Data Approver":
                                                         startActivity(new Intent(LoginActivity.this, DataApprover_Home.class));
                                                         Toast.makeText(LoginActivity.this, "Logged In  successfully!", Toast.LENGTH_SHORT).show();
-
                                                         break;
                                                     case "Admin":
                                                         startActivity(new Intent(LoginActivity.this, Admin_Home.class));
                                                         Toast.makeText(LoginActivity.this, "Logged In  successfully!", Toast.LENGTH_SHORT).show();
                                                         break;
                                                     default:
-                                                        // Handle other roles or unknown roles
                                                         Toast.makeText(LoginActivity.this, "Unknown user role", Toast.LENGTH_SHORT).show();
                                                         break;
                                                 }
-                                                finish(); // Close the login activity
+                                                finish();
                                             } else {
                                                 Toast.makeText(LoginActivity.this, "User role not found", Toast.LENGTH_SHORT).show();
                                             }
                                         }
+                                        loadingDialog.dismiss(); // Dismiss loading dialog
                                     }
 
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError databaseError) {
                                         Toast.makeText(LoginActivity.this, "Database error", Toast.LENGTH_SHORT).show();
+                                        loadingDialog.dismiss(); // Dismiss loading dialog
                                     }
                                 });
                             }
                         } else {
-                            // If sign in fails, display a message to the user.
-                            Toast.makeText(getApplicationContext(), "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
+                            loadingDialog.dismiss(); // Dismiss loading dialog
                         }
                     }
                 });
