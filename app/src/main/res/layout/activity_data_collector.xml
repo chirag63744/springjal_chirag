@@ -7,51 +7,65 @@
     android:background="@drawable/bck"
     tools:context=".DataCollector_Home">
 
-    <ImageView
-        android:id="@+id/patientPhoto"
-        android:layout_width="146dp"
-        android:layout_height="113dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="95dp"
-        android:src="@drawable/patient1" />
-
-    <TextView
-        android:id="@+id/username"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userdetailslayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/patientPhoto"
-        android:layout_marginLeft="127dp"
-        android:layout_marginTop="5dp"
-        android:text="James Bond"
-        android:textColor="#213C89"
-        android:textSize="28dp"
-        android:textStyle="bold" />
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true">
 
-    <TextView
-        android:id="@+id/userid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/username"
-        android:layout_marginLeft="139dp"
-        android:text="Emp Id: 20MIS0198"
-        android:textColor="#5BADD3"
-        android:textSize="14dp" />
+        <ImageView
+            android:id="@+id/userphoto"
+            android:layout_width="146dp"
+            android:layout_height="113dp"
+            android:src="@drawable/patient1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/role"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/userid"
-        android:layout_marginLeft="139dp"
-        android:text="Role: Data Collector"
-        android:textColor="#5BADD3"
-        android:textSize="14dp" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="James Bond"
+            android:textColor="#213C89"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userphoto" />
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emp Id: 20MIS0198"
+            android:textColor="#5BADD3"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role: Data Collector"
+            android:textColor="#5BADD3"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userid" />
+
+        <!-- Other buttons or views aligned below the user info -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
         android:id="@+id/new_activity"
         android:layout_width="254dp"
         android:layout_height="58dp"
-        android:layout_below="@+id/role"
+        android:layout_below="@+id/userdetailslayout"
         android:layout_marginLeft="68dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="19dp"

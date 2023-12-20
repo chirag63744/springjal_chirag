@@ -48,7 +48,9 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:hint="SPR3214"
+                    android:textColor="@color/black"
                     android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
 

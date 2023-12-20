@@ -58,7 +58,7 @@
 
         <RelativeLayout
             android:id="@+id/uploadButton"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="58dp"
             android:layout_below="@id/activityStatusTextViewtxt"
             android:layout_marginTop="16dp"

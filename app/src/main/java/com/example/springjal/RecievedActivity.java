@@ -15,8 +15,9 @@ import java.util.List;
 
 public class RecievedActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private  RecievedActivityAdapter activityAdapter;
+    private RecievedActivityAdapter activityAdapter;
     private List<RecievedActivityModel> activityList;
+    private loading loadingDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +28,22 @@ public class RecievedActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view_activities);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // Initialize loading dialog
+        loadingDialog = new loading(this);
+
         // Fetch activities from Firestore
         fetchActivitiesFromFirestore();
 
         // Initialize adapter with an empty list (will be updated later)
         activityList = new ArrayList<>();
-        activityAdapter = new RecievedActivityAdapter(activityList,this);
+        activityAdapter = new RecievedActivityAdapter(activityList, this);
         recyclerView.setAdapter(activityAdapter);
     }
 
     // Fetch activities from Firestore
     private void fetchActivitiesFromFirestore() {
+        loadingDialog.show(); // Show loading dialog
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         db.collection("activities")
@@ -56,11 +62,13 @@ public class RecievedActivity extends AppCompatActivity {
 
                     // Update the adapter with the new data
                     activityAdapter.notifyDataSetChanged();
+
+                    loadingDialog.dismiss(); // Dismiss loading dialog
                 })
                 .addOnFailureListener(e -> {
                     // Handle failure when fetching data from Firestore
                     Toast.makeText(getApplicationContext(), "Failed to fetch data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    loadingDialog.dismiss(); // Dismiss loading dialog in case of failure
                 });
     }
-
 }

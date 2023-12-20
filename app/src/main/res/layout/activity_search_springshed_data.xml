@@ -48,8 +48,9 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="15dp"
                     android:hint="Enter your State Name"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
                     android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -74,8 +75,9 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="15dp"
                     android:hint="Enter District Name"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
                     android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -101,7 +103,8 @@
                     android:layout_marginTop="15dp"
                     android:hint="Enter Village Name"
                     android:textColorHint="#5F5F5F"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -127,7 +130,8 @@
                     android:layout_marginTop="15dp"
                     android:hint="Hadmatiya,Raipur"
                     android:textColorHint="#504E4E"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout

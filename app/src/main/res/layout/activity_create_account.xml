@@ -54,7 +54,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter your Name"
                     android:textColor="#000000"
-                    android:textColorHint="#5F5F5F" />
+                    android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -82,7 +83,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="humsaathsaathhai@gmail.com"
                     android:textColor="#000000"
-                    android:textColorHint="#5F5F5F" />
+                    android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -110,7 +112,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="+91 6376179619"
                     android:textColor="#000000"
-                    android:textColorHint="#5F5F5F" />
+                    android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -138,7 +141,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="Minimum 8 Characters"
                     android:textColor="#000000"
-                    android:textColorHint="#504E4E" />
+                    android:textColorHint="#504E4E"
+                    android:background="@drawable/rounded_edittext_background"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -166,7 +170,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="Minimum 8 Characters"
                     android:textColor="#000000"
-                    android:textColorHint="#504E4E" />
+                    android:textColorHint="#504E4E"
+                    android:background="@drawable/rounded_edittext_background"/>
             </RelativeLayout>
 
             <RelativeLayout
