@@ -21,7 +21,7 @@ public class ReviewActivity_2 extends AppCompatActivity {
         latitudeinput = findViewById(R.id.latitudeinput);
         longitudeinput = findViewById(R.id.longitudeinput);
         additionaldetailsinput = findViewById(R.id.additionaldetailsinput);
-        image=findViewById(R.id.imageinput);
+        image=findViewById(R.id.imageinput1);
         // Retrieve data from Intent
         Intent intent = getIntent();
         if (intent != null) {

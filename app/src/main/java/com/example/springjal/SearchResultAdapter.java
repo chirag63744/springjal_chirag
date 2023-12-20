@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,7 +35,7 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
         // Declare views from activity_card_view.xml
         TextView activityNameTextView;
         TextView villagenametextview;
-        Button viewdatabtn;
+        RelativeLayout viewdatabtn;
 
 
         public ActivityViewHolder(View itemView) {
