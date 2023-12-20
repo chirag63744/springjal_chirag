@@ -20,11 +20,11 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="120dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="135dp"
                 android:text="Search Springshed Data"
                 android:textColor="#213C89"
-                android:textSize="32dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
             <RelativeLayout
                 android:id="@+id/state"
@@ -150,7 +150,7 @@
             <RelativeLayout
                 android:id="@+id/findonmaptxt"
                 android:layout_width="186dp"
-                android:layout_height="58dp"
+                android:layout_height="50dp"
                 android:layout_below="@+id/ortxt"
                 android:layout_marginLeft="110dp"
                 android:layout_marginTop="8dp"
@@ -171,7 +171,7 @@
             <RelativeLayout
                 android:id="@+id/fetchbtn"
                 android:layout_width="254dp"
-                android:layout_height="58dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="15dp"
                 android:layout_below="@+id/iotmappingtxt"
@@ -181,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="63dp"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="10dp"
                     android:text="Fetch Data"
                     android:textAlignment="center"
                     android:textColor="#FFF"

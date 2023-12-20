@@ -22,11 +22,11 @@
                 android:id="@+id/addsprtxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
                 android:text="Enter Spring Data"
                 android:textColor="#213C89"
-                android:textSize="35dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
 
             <RelativeLayout
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/addsprtxt"
                 android:layout_marginLeft="23dp"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="18dp">
 
                 <ImageButton
                     android:id="@+id/gmapImgButn"

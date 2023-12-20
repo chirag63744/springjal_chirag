@@ -20,13 +20,13 @@
                 android:id="@+id/activityName"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="120dp"
                 android:gravity="center"
                 android:text="Review"
                 android:textAlignment="center"
                 android:textColor="#213C89"
-                android:textSize="45dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
 
             <TextView

@@ -22,11 +22,11 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="73dp"
                 android:text="Create an account"
                 android:textColor="#213C89"
-                android:textSize="32dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
 
             <RelativeLayout

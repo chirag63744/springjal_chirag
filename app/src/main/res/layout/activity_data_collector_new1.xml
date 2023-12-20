@@ -20,11 +20,11 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="130dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="128dp"
                 android:text="Add Details"
                 android:textColor="#213C89"
-                android:textSize="32dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
 
             <TextView
