@@ -1,16 +1,21 @@
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:background="@drawable/rounded_cardview_background">
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#213C89"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
 
-    <!-- Layout for activity information -->
     <RelativeLayout
         android:id="@+id/activityNameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <!-- TextViews -->
         <TextView
@@ -19,7 +24,8 @@
             android:layout_height="wrap_content"
             android:text="Activity Name"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#fff"/>
 
         <TextView
             android:id="@+id/activityStatusTextViewtxt"
@@ -28,7 +34,8 @@
             android:layout_below="@id/activityNameTextViewtxt"
             android:layout_marginTop="8dp"
             android:text="Status"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="#fff"/>
 
         <!-- Buttons for actions -->
         <RelativeLayout

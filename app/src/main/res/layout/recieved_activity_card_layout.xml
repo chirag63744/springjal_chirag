@@ -1,68 +1,97 @@
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:background="@drawable/rounded_cardview_background">
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#213C89"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
 
-    <!-- Layout for activity information -->
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/activityNameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <!-- TextViews -->
         <TextView
-            android:id="@+id/activityNameTextView"
+            android:id="@+id/activityNameTextViewtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Activity Name"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#fff"/>
 
         <TextView
-            android:id="@+id/activityStatusTextView"
+            android:id="@+id/activityStatusTextViewtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/activityNameTextViewtxt"
             android:layout_marginTop="8dp"
             android:text="Status"
-            android:textSize="16sp"/>
-        <!-- Buttons for actions -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp">
+            android:textSize="16sp"
+            android:textColor="#fff"/>
 
-            <Button
-                android:id="@+id/reviewEditButton"
+        <!-- Buttons for actions -->
+        <RelativeLayout
+            android:id="@+id/reviewEditButton"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/activityStatusTextViewtxt"
+            android:layout_marginTop="16dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reviewEditButtontxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Review"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button2"
                 android:padding="8dp"
-                android:textColor="@color/white"
-                android:layout_marginRight="8dp"/>
+                android:textColor="@color/white"/>
+        </RelativeLayout>
 
-            <Button
-                android:id="@+id/approvebtn"
+        <RelativeLayout
+            android:id="@+id/approvebtn"
+            android:layout_width="90dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/activityStatusTextViewtxt"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:layout_toEndOf="@id/reviewEditButton">
+
+            <TextView
+                android:id="@+id/approvebtntxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Approve"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button2"
                 android:padding="8dp"
-                android:textColor="@color/white"
-                android:layout_marginRight="8dp"/>
+                android:textColor="@color/white" />
+        </RelativeLayout>
 
-            <Button
-                android:id="@+id/rejectbtn"
+        <RelativeLayout
+            android:id="@+id/rejectbtn"
+            android:layout_width="100dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/activityStatusTextViewtxt"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:layout_toEndOf="@id/approvebtn">
+
+            <TextView
+                android:id="@+id/withdrawButtontxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reject"
-                android:background="@drawable/rounded_button_background"
+                android:background="@drawable/button2"
                 android:padding="8dp"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-    </LinearLayout>
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

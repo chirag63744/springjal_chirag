@@ -41,8 +41,8 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.ActivityVi
         public ActivityViewHolder(View itemView) {
             super(itemView);
             // Initialize views
-            activityNameTextView = itemView.findViewById(R.id.activityNameTextView);
-            activityStatusTextView = itemView.findViewById(R.id.activityStatusTextView);
+            activityNameTextView = itemView.findViewById(R.id.activityNameTextViewtxt);
+            activityStatusTextView = itemView.findViewById(R.id.activityStatusTextViewtxt);
             reviewEditButton = itemView.findViewById(R.id.reviewEditButton);
             uploadButton = itemView.findViewById(R.id.uploadButton);
             withdrawButton = itemView.findViewById(R.id.withdrawButton);
@@ -63,7 +63,6 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.ActivityVi
         StatusActivityModel activity = activities.get(position);
         holder.activityNameTextView.setText(activity.getActivityName());
         holder.activityStatusTextView.setText(activity.getApprovalStatus());
-
         // Handle button actions here (Review/Edit, Upload, Withdraw)
         holder.reviewEditButton.setOnClickListener(v -> {
             fetchActivityData(activity.getActivityName());

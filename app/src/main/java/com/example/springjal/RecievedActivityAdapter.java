@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,15 +35,14 @@ public class RecievedActivityAdapter extends RecyclerView.Adapter<RecievedActivi
         // Declare views from activity_card_view.xml
         TextView activityNameTextView;
         TextView activityStatusTextView;
-        Button reviewEditButton;
-        Button approvebtn;
-        Button rejectbtn;
+        RelativeLayout reviewEditButton,approvebtn,rejectbtn;
+
 
         public ActivityViewHolder(View itemView) {
             super(itemView);
             // Initialize views
-            activityNameTextView = itemView.findViewById(R.id.activityNameTextView);
-            activityStatusTextView = itemView.findViewById(R.id.activityStatusTextView);
+            activityNameTextView = itemView.findViewById(R.id.activityNameTextViewtxt);
+            activityStatusTextView = itemView.findViewById(R.id.activityStatusTextViewtxt);
             reviewEditButton = itemView.findViewById(R.id.reviewEditButton);
             approvebtn = itemView.findViewById(R.id.approvebtn);
             rejectbtn = itemView.findViewById(R.id.rejectbtn);
