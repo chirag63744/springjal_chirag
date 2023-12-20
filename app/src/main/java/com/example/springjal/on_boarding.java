@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class on_boarding extends AppCompatActivity {
-    RelativeLayout signupbtn, loginbtn;
+    RelativeLayout signupbtn1, loginbtn;
 
     // Request code for location permission
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1001;
@@ -35,13 +35,13 @@ public class on_boarding extends AppCompatActivity {
     }
 
     private void initializeViews() {
-        signupbtn = findViewById(R.id.signUpbtn);
+        signupbtn1 = findViewById(R.id.signUpbtn);
         loginbtn = findViewById(R.id.loginButton);
 
-        signupbtn.setOnClickListener(new View.OnClickListener() {
+        signupbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), UserType.class);
+                Intent intent = new Intent(on_boarding.this, UserType.class);
                 startActivity(intent);
             }
         });

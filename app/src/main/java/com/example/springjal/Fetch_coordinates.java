@@ -10,6 +10,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -29,8 +30,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Fetch_coordinates extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-//dshfbsfjlweV
-    Button fetch;
+
+    RelativeLayout fetch;
     private FusedLocationProviderClient fusedLocationClient;
     private Marker currentMarker;
 
@@ -127,7 +128,7 @@ public class Fetch_coordinates extends AppCompatActivity implements OnMapReadyCa
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+       googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
         // Enable My Location layer on the map
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -153,7 +154,7 @@ public class Fetch_coordinates extends AppCompatActivity implements OnMapReadyCa
                 if (location != null) {
                     // Use the location to update the map
                     LatLng currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
-                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 16));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 18));
                 }
             });
         } else {

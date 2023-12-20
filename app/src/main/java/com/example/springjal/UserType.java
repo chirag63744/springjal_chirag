@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class UserType extends AppCompatActivity {
-RelativeLayout dataCollector,dataApprover,admin;
+RelativeLayout dataCollector,dataApprover;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,12 +29,7 @@ RelativeLayout dataCollector,dataApprover,admin;
             }
         });
 
-        admin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openCreateAccountActivity("Admin");
-            }
-        });
+
     }
     private void openCreateAccountActivity(String userType) {
         Intent intent = new Intent(UserType.this, create_account.class);
