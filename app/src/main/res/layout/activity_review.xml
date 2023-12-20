@@ -61,8 +61,9 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter your State Name"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
                     android:textColorHint="#5F5F5F"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -87,7 +88,8 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter District Name"
-                    android:textColorHint="#5F5F5F"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -112,8 +114,8 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter Village Name"
-                    android:textColor="#E8E8EC"
-                    android:textColorHint="#5F5F5F"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -138,8 +140,9 @@
                     android:layout_height="53.15dp"
                     android:layout_marginTop="32.85dp"
                     android:hint="Hadmatiya,Raipur"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
                     android:textColorHint="#504E4E"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -165,7 +168,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="Under Construction / Completed"
                     android:textColorHint="#504E4E"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -191,7 +195,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="12/12/2023"
                     android:textColorHint="#504E4E"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout
@@ -217,7 +222,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter the Id written on the Module eg-:SNMP1243"
                     android:textColorHint="#504E4E"
-                    android:textColor="#E8E8EC"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
             <RelativeLayout

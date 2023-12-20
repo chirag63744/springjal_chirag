@@ -195,7 +195,8 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter the additional details"
-                    android:textColorHint="#504E4E" />
+                    android:textColorHint="#504E4E"
+                    android:background="@drawable/rounded_edittext_background"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -212,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
-                    android:text="Approve"
+                    android:text="Upload"
                     android:textAlignment="center"
                     android:textColor="#FFF"
                     android:textSize="16dp"

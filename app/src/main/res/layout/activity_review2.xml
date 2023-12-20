@@ -127,6 +127,8 @@
                     android:layout_marginTop="32.85dp"
                     android:hint="Enter the additional details"
                     android:textColorHint="#504E4E"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_edittext_background"
                     />
             </RelativeLayout>
 

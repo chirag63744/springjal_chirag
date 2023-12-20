@@ -21,7 +21,7 @@
                 android:id="@+id/createaccounttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginLeft="140dp"
                 android:layout_marginTop="120dp"
                 android:text="Status"
                 android:textColor="#213C89"
@@ -36,7 +36,7 @@
                 android:layout_marginTop="23dp"
                 android:text="Activities"
                 android:textColor="#DB4464"
-                android:textSize="13dp"
+                android:textSize="26dp"
                 android:textStyle="bold" />
 
             <!-- RecyclerView -->
