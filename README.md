@@ -1,4 +1,4 @@
-# SWM - SpringShed Management monitoring Mapping Applications
+# SWM - SpringShed Management monitoring Mapping Application
 
 ## INTRODUCTION
 
